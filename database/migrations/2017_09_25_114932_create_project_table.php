@@ -16,16 +16,16 @@ class CreateProjectTable extends Migration
         Schema::create('project', function (Blueprint $table) {
             $table->increments('id');
             $table->string('cover')->nullable();
-            $table->string('title');
-            $table->string('subtitle');
-            $table->string('about_head');
-            $table->string('about_detail');
-            $table->string('material');
-            $table->string('roles');
-            $table->string('skills');
+            $table->string('title', 200);
+            $table->string('subtitle', 300);
+            $table->text('about_head');
+            $table->text('about_detail');
+            $table->text('material');
+            $table->text('roles');
+            $table->text('skills');
             $table->string('link')->nullable();
             $table->string('category');
-            $table->string('more_image')->nullable();
+            $table->text('more_image')->nullable();
             $table->timestamps();
         });
     }

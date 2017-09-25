@@ -18,15 +18,15 @@ class CreateActivityTable extends Migration
             $table->string('cover')->nullable();
             $table->string('title');
             $table->string('subtitle');
-            $table->string('about_head');
-            $table->string('about_detail');
+            $table->text('about_head');
+            $table->text('about_detail');
             $table->string('date');            
             $table->string('organizer');
-            $table->string('roles');
-            $table->string('skills');
+            $table->text('roles');
+            $table->text('skills');
             $table->string('link')->nullable();
             $table->string('category')->nullable();
-            $table->string('more_image')->nullable();
+            $table->text('more_image')->nullable();
             $table->timestamps();
         });
     }
