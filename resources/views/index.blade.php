@@ -120,11 +120,11 @@
                                 <a href="about" class="hbtn hb-fill-bottom hpad2 is-uppercase">About Me</a>
 
                             </div>
-                        </madiv>
+                        </div>
                     </div>
                     <div class="column">
                         <div class="has-text-centered">
-                            <img alt="" src="{{ asset('storage/image/msp01.JPG') }}">
+                            <img alt="" src="{{ asset('storage/image/msp01.jpg') }}">
                         </div>
                     </div>
 

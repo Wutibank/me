@@ -17,24 +17,23 @@
         <div class="container">
 
             <div class="columns is-multiline">
-
+@foreach ($act as $acti)
                 <div class="column is-4">
                     <div class="card">
                         <div class="card-image ">
                             <figure class="image image-cover">
-                                <img src="image/d003.png" alt="Placeholder image">
+                                <img src="storage/image/activities/{{ $acti->cover }}" alt="Placeholder image">
                             </figure>
                         </div>
                         <div class="card-content">
                             <div class="media">
-
                                 <div class="media-content">
-                                    <p class="title is-4">ออกแบบสื่อการเรียนรู้</p>
-                                    <p class="subtitle is-6">รายวิชาการออกแบบ</p>
+                                    <p class="title is-4">{{ $acti->title }}</p>
+                                    <p class="subtitle is-6">{{ $acti->subtitle }}</p>
                                 </div>
 
                                 <div class="media-right">
-                                    <a href="activity-detail.html">
+                                    <a href="activity/{{ $acti->id }}">
                                         <i class="ion-ios-arrow-dropright-circle-outline" style="color: #777;font-size: 2.5em"></i>
                                     </a>
                                 </div>
@@ -42,15 +41,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column is-4">
-                    55555555
-                </div>
-                <div class="column is-4">
-                    55555555
-                </div>
-                <div class="column is-4">
-                    55555555
-                </div>
+                @endforeach
 
             </div>
 

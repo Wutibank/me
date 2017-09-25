@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use DB;
+use App\activity;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class activityController extends Controller
 {
@@ -14,7 +17,8 @@ class activityController extends Controller
     public function index()
     {
         //
-        return view('layouts.activity');
+        $activities = DB::table('activities')->get();
+        return view('layouts.activity',['act'=>$activities]);
     }
 
     /**
@@ -47,7 +51,14 @@ class activityController extends Controller
     public function show($id)
     {
         //
-        return view('layouts.activity-de');
+        $activities = activity::find($id);
+        $skills = activity::find($id)->pluck('skills');
+        $more_image = activity::find($id)->pluck('more_image');
+        $skill = explode("&&",$skills[0]);
+        $image = explode("&&",$more_image[0]);
+        
+
+        return view('layouts.activity-de',['act'=>$activities,'ski'=>$skill,'im'=>$image]);
     }
 
     /**

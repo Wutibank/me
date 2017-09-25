@@ -122,7 +122,6 @@
                 <div class="column wow fadeIn" data-wow-duration="3s">
                     <div class="columns is-multiline">
                      @foreach ($im as $image)
-
                         <div class="column is-4">
                             <div class="item">
                                 <a class="image-popup-no-margins" href="/storage/image/project/{{ $image }}">
@@ -142,7 +141,7 @@
     </section>
 
         <div class="aligner">
-        <div id="menu-item-project" style="top: 80px;">
+        <div id="menu-item-project" style="top: 50px;">
             <a id="link-two" href="/project" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #22AAA1"> <i class="is-paddingless ion-md-arrow-round-back" style="color: #22AAA1"></i></a>
 
         </div>
