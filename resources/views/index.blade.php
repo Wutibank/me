@@ -117,7 +117,7 @@
                             <div class="is-block">
                                 <div class="title has-text-white is-size-2-touch is-size-1-desktop" style="padding-bottom: 0.2em"> My Story </div>
                                 <div class="subtitle has-text-white"> เรื่องราวการเดินทางของชีวิต </div>
-                                <a href="me.html" class="hbtn hb-fill-bottom hpad2 is-uppercase">About Me</a>
+                                <a href="about" class="hbtn hb-fill-bottom hpad2 is-uppercase">About Me</a>
 
                             </div>
                         </div>

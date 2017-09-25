@@ -1,19 +1,31 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="{{ app()->getLocale() }}" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wutibank Website</title>
-    <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+    <meta property="og:image" content="{{ asset('storage/image/page.png') }}" />
+
+      <!-- CSRF Token -->
+      <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>{{ config('app.name', 'Laravel') }}</title>
+   
+    <link rel="image_src" href="{{ asset('storage/image/page.png') }}" />
+    <link rel="icon" href="{{ asset('storage/image/favicon.png') }}" type="image/x-icon" />
+
+    <!-- Styles -->
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/hoverbuttons.css">
+    <link rel="stylesheet" href="{{ asset('css/main.min.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/hoverbuttons.min.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@3.0.0/dist/css/ionicons.min.css">
-    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{{ asset('dist/owlcarousel/assets/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('dist/owlcarousel/assets/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('dist/magnific-popup/magnific-popup.css') }}">
     <style>
         body {
             margin: 0;
@@ -42,12 +54,12 @@
             </div>
         </div>
     </section>
-    <div class="parallax-cover is-hidden-touch wow fadeIn" style="background-image: url('image/msp01.JPG');"></div>
+    <div class="parallax-cover is-hidden-touch wow fadeIn" style="background-image: url('{{ asset('storage/image/msp01.JPG') }}');"></div>
 
     <section class="hero is-fullheight" id="section-projectlist">
 
         <div class="container">
-            <img class="is-hidden-desktop  wow fadeIn" src="image/msp01.JPG">
+            <img class="is-hidden-desktop  wow fadeIn" src="{{ asset('storage/image/msp01.JPG') }}">
             <div style="padding: 0 6vmin">
                 <div class="has-text-centered head-me wow fadeIn">
 
@@ -93,7 +105,7 @@ CURRICULUM VITAE (CV)</span>
             </div>
         </div>
     </section>
-    <div class="parallax-cover wow fadeIn" style="background-image: url('image/skills.jpg');"></div>
+    <div class="parallax-cover wow fadeIn" style="background-image: url('{{ asset('storage/image/skills.jpg') }}');"></div>
     <section class="hero is-fullheight" id="section-projectlist" style="padding-bottom: 2em">
         <div class="container">
             <div style="padding: 0 6vmin">
@@ -147,7 +159,7 @@ CURRICULUM VITAE (CV)</span>
 
     </section>
 
-    <div class="parallax-cover wow fadeIn" style="background-image: url('image/connect.jpg');"></div>
+    <div class="parallax-cover wow fadeIn" style="background-image: url('{{ asset('storage/image/connect.jpg') }}');"></div>
     <section class="hero is-fullheight" id="section-projectlist">
         <div class="container">
             <div style="padding: 0 6vmin">
@@ -197,7 +209,7 @@ Github</span>
                 </div>
                 <br>
                 <div class="has-text-centered  wow fadeIn" style="margin-bottom: 5vmin">
-                    <div style="background-image: url('image/my01.jpg');min-height: 80vmin; background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;">
+                    <div style="background-image: url('{{ asset('storage/image/my01.jpg') }}');min-height: 80vmin; background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;">
                     </div>
                 </div>
             </div>
@@ -213,47 +225,19 @@ Github</span>
     <!-- scroll Up-->
     <div class="aligner">
         <div id="menu-item-project">
-
-            <a id="link-two" href="index.html" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #FFCA3A"> <i class="is-paddingless ion-ios-home" style="color: #FFCA3A"></i></a>
+            <a id="link-two" href="/" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #FFCA3A"> <i class="is-paddingless ion-ios-home" style="color: #FFCA3A"></i></a>
 
         </div>
     </div>
     <a href="#section-one" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em;color: #FFCA3A"></i></a>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
-    <script src="dist/wow/wow.min.js"></script>
-    <script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{{ asset('dist/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('dist/wow/wow.min.js') }}"></script>
+    <script src="{{ asset('dist/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('js/script.min.js') }}"></script>
     <script>
         new WOW().init();
-        $(document).ready(function() {
-            $(".owl-carousel").owlCarousel();
-        });
-
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: false,
-            autoplay: true,
-            autoplayTimeout: 1500,
-            autoplayHoverPause: false,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: false
-                },
-                769: {
-                    items: 2,
-                    nav: false
-                },
-                1008: {
-                    items: 1,
-                    loop: true,
-                }
-            }
-        });
     </script>
 </body>
 
