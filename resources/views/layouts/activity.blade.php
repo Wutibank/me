@@ -1,31 +1,6 @@
-<!DOCTYPE html>
-<html lang="">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wutibank Website</title>
-    <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/hoverbuttons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@3.0.0/dist/css/ionicons.min.css">
-    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
-    <style>
-        body {
-            margin: 0;
-            background-color: #495867;
-        }
-
-    </style>
-
-</head>
-
-<body>
-    <section id="section-three">
+@extends('main')
+@section('body')
+<section id="section-three">
         <div class="container">
             <div class="has-text-centered">
                 <i class="ion-ios-bulb" style="font-size: 20vmin;color: #fff;padding-right: 0.2em"></i>
@@ -84,30 +59,4 @@
     <section style="background-color: #F25757;height: 50px">
     </section>
 
-
-
-    <!-- scroll Up-->
-    <div class="aligner">
-
-        <div id="menu-item-project">
-
-            <a id="link-two" href="index.html" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #F25757"> <i class="is-paddingless ion-ios-home" style="color: #F25757"></i></a>
-
-        </div>
-    </div>
-    <a href="#section-one" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em"></i></a>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
-    <script src="script.js"></script>
-    <script>
-        $(document).ready(function() {
-            $(".owl-carousel").owlCarousel();
-
-        });
-
-
-    </script>
-</body>
-
-</html>
+    @endsection

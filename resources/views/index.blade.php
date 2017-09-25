@@ -63,7 +63,7 @@
                         <div class="title has-text-white is-size-2-touch is-size-1-desktop" style="padding-bottom: 0.1em"> My Projects </div>
                         <div class="subtitle has-text-white"> ความรู้จากการลงมือทำ </div>
                     </div>
-                    <div style="padding-top: 0.4em"> <a href="project.html" class="hbtn hb-fill-bottom hpad2 is-uppercase">show more</a> </div>
+                    <div style="padding-top: 0.4em"> <a href="project" class="hbtn hb-fill-bottom hpad2 is-uppercase">show more</a> </div>
                 </div>
             </div>
         </div>
@@ -91,7 +91,7 @@
                         <div class="title has-text-white is-size-2-touch is-size-1-desktop" style="padding-bottom: 0.1em"> My Activities </div>
                         <div class="subtitle has-text-white"> แรงบันดาลใจสร้างประสบการณ์ </div>
                     </div>
-                    <div style="padding-top: 0.4em"> <a href="activity.html" class="hbtn hb-fill-bottom hpad2 is-uppercase">show more</a> </div>
+                    <div style="padding-top: 0.4em"> <a href="activity" class="hbtn hb-fill-bottom hpad2 is-uppercase">show more</a> </div>
                 </div>
             </div>
         </div>

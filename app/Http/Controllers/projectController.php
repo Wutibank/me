@@ -14,6 +14,7 @@ class projectController extends Controller
     public function index()
     {
         //
+        return view('layouts.project');
     }
 
     /**
@@ -46,6 +47,7 @@ class projectController extends Controller
     public function show($id)
     {
         //
+        return view('layouts.project-de');
     }
 
     /**

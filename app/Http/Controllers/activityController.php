@@ -14,6 +14,7 @@ class activityController extends Controller
     public function index()
     {
         //
+        return view('layouts.activity');
     }
 
     /**
@@ -46,6 +47,7 @@ class activityController extends Controller
     public function show($id)
     {
         //
+        return view('layouts.activity-de');
     }
 
     /**
