@@ -36,25 +36,26 @@
 
                 <input type="radio" id="other" name="color">
                 <label for="other" class="project-bt">OTHER</label>
-
-                <div class="column is-4 tileAmimate program">
+                
+@foreach ($pj as $pro)
+                <div class="column is-4 tileAmimate {{ $pro->category }}">
                     <div class="card">
                         <div class="card-image">
                             <figure class="image is-4by3">
-                                <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                <img src="storage/image/project/{{ $pro->cover }}" alt="Placeholder image">
                             </figure>
                         </div>
                         <div class="card-content">
                             <div class="media">
 
                                 <div class="media-content">
-                                    <p class="title is-4">ออกแบบสื่อการเรียนรู้</p>
-                                    <p class="subtitle is-6">รายวิชาการออกแบบ</p>
-                                    <a href="#" style="color: #22AAA1">#Programming</a>
+                                    <p class="title is-4">{{ $pro->title }}</p>
+                                    <p class="subtitle is-6">{{ $pro->subtitle }}</p>
+                                    <p style="color: #22AAA1">#{{ $pro->category }}</p>
                                 </div>
 
                                 <div class="media-right">
-                                    <a href="project-detail.html">
+                                    <a href="project/{{ $pro->id }}">
                                         <i class="ion-ios-arrow-dropright-circle-outline" style="color: #777;font-size: 2.5em"></i>
                                     </a>
                                 </div>
@@ -62,6 +63,7 @@
                         </div>
                     </div>
                 </div>
+@endforeach
                 <div class="column is-4 tileAmimate design">
                     designnnn
                 </div>

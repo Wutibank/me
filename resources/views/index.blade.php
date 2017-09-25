@@ -120,7 +120,7 @@
                                 <a href="about" class="hbtn hb-fill-bottom hpad2 is-uppercase">About Me</a>
 
                             </div>
-                        </div>
+                        </madiv>
                     </div>
                     <div class="column">
                         <div class="has-text-centered">

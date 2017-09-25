@@ -7,10 +7,10 @@
             <div class="has-text-centered">
                 <div class="is-inline-block ">
                     <div class="title has-text-white is-size-5-touch is-size-1-desktop" style="padding-bottom: 0.2em">
-                        Name Project Name Project Name Project
+                        {{ $pj->title }}
                     </div>
                     <div class="subtitle has-text-white is-size-6-touch is-size-4-desktop">
-                        คำอธิบายย่อหนึ่งประโยค
+                       {{ $pj->subtitle }}
                     </div>
                 </div>
 
@@ -23,7 +23,7 @@
             <div class="has-text-centered">
                 <div class="is-inline-block ">
                     <div class="title has-text-white is-size-5-touch is-size-3-desktop" style="padding: 0.5em">
-                        Name Project Name Project Name Project
+                        {{ $pj->title }}
                     </div>
                 </div>
             </div>
@@ -34,8 +34,10 @@
     <section class="section" id="section-image-project">
         <div class="container">
             <div class="has-text-centered wow fadeIn" data-wow-duration="2s">
-                <figure class=""><img src="image/d003.png">
+            <a class="image-popup-no-margins" href="/storage/image/project/{{ $pj->cover }}">
+                <figure class=""><img src="/storage/image/project/{{ $pj->cover }}">
                 </figure>
+                </a>
             </div>
         </div>
     </section>
@@ -46,12 +48,12 @@
             <div class="columns wow fadeInDown">
                 <div class="column is-3">
                     <sup>No 1</sup>
-                    <span class="title is-5 is-uppercase">About Project</span>
+                    <span class="title is-5 is-uppercase">{{ $pj->title }}</span>
                 </div>
                 <div class="column">
-                    <p class="subtitle">เว็บไซต์แสดงข้อมูลของแคคตัส สถานที่ขายหรือคาเฟ่แคคตัส โปรเจกต์ในรายวิชา Interactive Design.</p>
+                    <p class="subtitle">{{ $pj->about_head }}</p>
 
-                    <h3>เว็บไซต์ออกแบบในรูปแบบ Flat Design, Card design เน้นความเรียบง่ายสบายตา พื้นหลังของหน้า Home ใช้ภาพที่เป็น Cinemagraph โดยตัวเว็บไซต์ประกอบไปด้วยเนื้อหาหลักๆคือ ข้อมูลเกี่ยวกับแคคตัส คลังรูปภาพแคคตัส ชุมชนแลกเปลี่ยนข้อมูลแคคตัส แนะนำสถานที่ขายและคาเฟ่แคคตัส เว็บไซต์ Tiny Plants จึงเหมาะสาหรับผู้ที่สนใจ Cactus ต้องการที่จะหาความรู้ทั้งสายพันธุ์วิธีการดูแลรักษา และแลกเปลี่ยนความรู้กับกลุ่มคนที่ชื่นชอบแบบเดียวกัน</h3>
+                    <h3>{{ $pj->about_detail }}</h3>
                 </div>
 
             </div>
@@ -63,10 +65,9 @@
                 </div>
                 <div class="column">
                     <ul class="a">
-                        <li>MDBootstrap Framework</li>
-                        <li>Bootstrap Framework</li>
-                        <li>SQLite</li>
-                        <li>MySQL</li>
+                    @foreach ($ma as $mate)
+                        <li>{{ $mate }}</li>
+                        @endforeach
                     </ul>
                 </div>
 
@@ -79,10 +80,9 @@
                 </div>
                 <div class="column">
                     <ul class="a">
-                        <li>MDBootstrap Framework</li>
-                        <li>Bootstrap Framework</li>
-                        <li>SQLite</li>
-                        <li>MySQL</li>
+                        @foreach ($ro as $role)
+                        <li>{{ $role }}</li>
+                        @endforeach
                     </ul>
                 </div>
 
@@ -95,10 +95,9 @@
                 </div>
                 <div class="column">
                     <ul class="a">
-                        <li>MDBootstrap Framework</li>
-                        <li>Bootstrap Framework</li>
-                        <li>SQLite</li>
-                        <li>MySQL</li>
+                         @foreach ($ski as $skill)
+                        <li>{{ $skill }}</li>
+                        @endforeach
                     </ul>
                 </div>
 
@@ -110,7 +109,7 @@
                     <span class="title is-5">LINK</span>
                 </div>
                 <div class="column">
-                    <a href="#">www.wutibank.com</a>
+                    <a href="{{ $pj->subtitle }}">{{ $pj->link }}</a>
                 </div>
 
             </div>
@@ -122,28 +121,17 @@
                 </div>
                 <div class="column wow fadeIn" data-wow-duration="3s">
                     <div class="columns is-multiline">
+                     @foreach ($im as $image)
+
                         <div class="column is-4">
                             <div class="item">
-                                <a class="image-popup-no-margins" href="image/ea01.png">
-                                    <img alt="" src="image/ea01.png">
+                                <a class="image-popup-no-margins" href="/storage/image/project/{{ $image }}">
+                                    <img alt="" src="/storage/image/project/{{ $image }}">
                                 </a>
                             </div>
                         </div>
-                        <div class="column is-4">
-                            <div class="item"><img alt="" src="image/ea02.png"></div>
-                        </div>
-                        <div class="column is-4">
-                            <div class="item"><img alt="" src="image/ea03.png"></div>
-                        </div>
-                        <div class="column is-4">
-                            <div class="item"><img alt="" src="image/ea03.png"></div>
-                        </div>
-                        <div class="column is-4">
-                            <div class="item"><img alt="" src="image/ea02.png"></div>
-                        </div>
-                        <div class="column is-4">
-                            <div class="item"><img alt="" src="image/ea01.png"></div>
-                        </div>
+                    @endforeach
+
                     </div>
                 </div>
 
