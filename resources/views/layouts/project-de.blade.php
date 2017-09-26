@@ -1,4 +1,9 @@
 @extends('detail')
+
+@section('title')
+ {{ $pj->title }}
+@endsection
+
 @section('body')
 <i id="top"></i>
   <section class="section" id="section-two">
@@ -34,48 +39,66 @@
     <section class="section" id="section-image-project">
         <div class="container">
             <div class="has-text-centered wow fadeIn" data-wow-duration="2s">
-            <a class="image-popup-no-margins" href="/storage/image/project/{{ $pj->cover }}">
-                <figure class=""><img src="/storage/image/project/{{ $pj->cover }}">
-                </figure>
-                </a>
+                
+                    @if (empty($pj->video))
+                    <a class="image-popup-no-margins" href="/storage/image/project/{{ $pj->cover }}">
+                        <figure class=""><img src="/storage/image/project/{{ $pj->cover }}">
+                        </figure>
+                    </a>
+                    @else
+                    <div class="videoFrame">
+                         <iframe src="{{ $pj->video }}" frameborder="0" allowfullscreen></iframe>     
+                        </div>
+                    @endif
+
             </div>
         </div>
     </section>
-
+@php
+$number = 1;
+@endphp
     <section class="section" id="section-projectlist">
         <div class="container">
 
+            @if (!empty($pj->about_head))
             <div class="columns wow fadeInDown">
                 <div class="column is-3">
-                    <sup>No 1</sup>
-                    <span class="title is-5 is-uppercase">{{ $pj->title }}</span>
+                    <sup>No {{ $number }}</sup>
+                    <span class="title is-5 is-uppercase">ABOUT PROJECT</span>
                 </div>
                 <div class="column">
-                    <p class="subtitle">{{ $pj->about_head }}</p>
-
-                    <h3>{{ $pj->about_detail }}</h3>
+                    <p class="subtitle">{!! $pj->about_head !!}</p>
+                    <h3>{!! $pj->about_detail !!}</h3>
                 </div>
-
             </div>
-            <br>
+            @php
+            $number++;
+            @endphp
+            @endif
+
+            @if (!empty($ma[0]))
             <div class="columns wow fadeInDown">
                 <div class="column is-3">
-                    <sup>No 2</sup>
+                    <sup>No {{$number}}</sup>
                     <span class="title is-5">MATERIAL</span>
                 </div>
                 <div class="column">
                     <ul class="a">
                     @foreach ($ma as $mate)
                         <li>{{ $mate }}</li>
-                        @endforeach
+                    @endforeach
                     </ul>
                 </div>
-
             </div>
-            <br>
+            @php
+            $number++;
+            @endphp
+            @endif
+
+            @if (!empty($ro[0]))
             <div class="columns wow fadeInDown">
                 <div class="column is-3">
-                    <sup>No 3</sup>
+                    <sup>No {{ $number }}</sup>
                     <span class="title is-5">ROLES</span>
                 </div>
                 <div class="column">
@@ -85,12 +108,16 @@
                         @endforeach
                     </ul>
                 </div>
-
             </div>
-            <br>
+            @php
+            $number++;
+            @endphp
+            @endif
+
+            @if (!empty($ski[0]))
             <div class="columns wow fadeInDown">
                 <div class="column is-3">
-                    <sup>No 4</sup>
+                    <sup>No {{ $number }}</sup>
                     <span class="title is-5">LEARNING SKILLS</span>
                 </div>
                 <div class="column">
@@ -100,29 +127,37 @@
                         @endforeach
                     </ul>
                 </div>
-
             </div>
-            <br>
+            @php
+            $number++;
+            @endphp
+            @endif
+
+            @if (!empty($pj->link))
             <div class="columns wow fadeInDown">
                 <div class="column is-3">
-                    <sup>No 5</sup>
+                    <sup>No {{ $number }}</sup>
                     <span class="title is-5">LINK</span>
                 </div>
                 <div class="column">
                     <a href="{{ $pj->subtitle }}">{{ $pj->link }}</a>
                 </div>
-
             </div>
-            <br>
+            @php
+            $number++;
+            @endphp
+            @endif
+
+            @if (!empty($image))
             <div class="columns">
                 <div class="column is-3 wow fadeInDown">
-                    <sup>No 6</sup>
+                    <sup>No {{ $number }}</sup>
                     <span class="title is-5">MORE IMAGE</span>
                 </div>
                 <div class="column wow fadeIn" data-wow-duration="3s">
                     <div class="columns is-multiline">
                      @foreach ($im as $image)
-                        <div class="column is-4">
+                        <div class="column is-4 has-text-centered">
                             <div class="item">
                                 <a class="image-popup-no-margins" href="/storage/image/project/{{ $image }}">
                                     <img alt="" src="/storage/image/project/{{ $image }}">
@@ -133,8 +168,8 @@
 
                     </div>
                 </div>
-
             </div>
+            @endif
         </div>
     </section>
     <section style="background-color: #22aaa1;height: 50px">

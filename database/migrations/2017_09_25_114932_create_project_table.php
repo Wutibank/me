@@ -19,13 +19,14 @@ class CreateProjectTable extends Migration
             $table->string('title', 200);
             $table->string('subtitle', 300);
             $table->text('about_head');
-            $table->text('about_detail');
+            $table->text('about_detail')->nullable();
             $table->text('material');
             $table->text('roles');
             $table->text('skills');
             $table->string('link')->nullable();
             $table->string('category');
             $table->text('more_image')->nullable();
+            $table->text('video')->nullable();            
             $table->timestamps();
         });
     }

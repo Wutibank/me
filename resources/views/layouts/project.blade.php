@@ -1,4 +1,5 @@
  @extends('main') 
+ @section('title', 'My Projects')
  @section('body')
  <section id="section-two">
         <div class="container">
@@ -33,8 +34,10 @@
 
                 <input type="radio" id="other" name="color">
                 <label for="other" class="project-bt">OTHER</label>
-@foreach ($pj as $pro)
-                <div class="column is-4 tileAmimate {{ $pro->category }}">
+
+                
+@foreach ($pj->shuffle() as $pro)
+                <div class="column is-6-tablet is-4-desktop tileAmimate {{ $pro->category }}">
                     <div class="card">
                         <div class="card-image">
                             <figure class="image">
@@ -43,7 +46,6 @@
                         </div>
                         <div class="card-content">
                             <div class="media">
-
                                 <div class="media-content card-content">
                                     <p class="title is-4">{{ $pro->title }}</p>
                                     <p class="subtitle is-6">{{ $pro->subtitle }}</p>

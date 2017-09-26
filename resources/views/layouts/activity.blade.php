@@ -1,4 +1,5 @@
 @extends('main')
+ @section('title', 'My Activities')
 @section('body')
 <section id="section-three">
         <div class="container">

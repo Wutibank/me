@@ -9,7 +9,7 @@
 
       <!-- CSRF Token -->
       <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>About Me</title>
    
     <link rel="image_src" href="{{ asset('storage/image/page.png') }}" />
     <link rel="icon" href="{{ asset('storage/image/favicon.png') }}" type="image/x-icon" />

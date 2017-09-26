@@ -9,10 +9,10 @@
 
       <!-- CSRF Token -->
       <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('title')</title>
    
-    <link rel="image_src" href="image/page.png" />
-    <link rel="icon" href="image/favicon.png" type="image/x-icon" />
+    <link rel="image_src" href="{{ asset('storage/image/page.png') }}" />
+    <link rel="icon" href="{{ asset('storage/storage/image/favicon.png') }}" type="image/x-icon" />
 
     <!-- Styles -->
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">

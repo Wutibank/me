@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="image/page.png" />
+    <meta property="og:image" content="storage/image/page.png" />
 
       <!-- CSRF Token -->
       <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>I AM WUTIBANK</title>
    
     <link rel="image_src" href="image/page.png" />
-    <link rel="icon" href="image/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="storage/image/favicon.png" type="image/x-icon" />
 
     <!-- Styles -->
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">

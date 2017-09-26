@@ -57,10 +57,10 @@ class projectController extends Controller
         $roles = project::find($id)->pluck('roles');
         $skills = project::find($id)->pluck('skills');
         $more_image = project::find($id)->pluck('more_image');
-        $mater = explode("&&",$material[0]);
-        $role = explode("&&",$roles[0]);
-        $skill = explode("&&",$skills[0]);
-        $image = explode("&&",$more_image[0]);
+        $mater = explode("&&",$material[$id-1]);
+        $role = explode("&&",$roles[$id-1]);
+        $skill = explode("&&",$skills[$id-1]);
+        $image = explode("&&",$more_image[$id-1]);
         
 
         return view('layouts.project-de',['pj'=>$projects,'ma'=>$mater,'ro'=>$role,'ski'=>$skill,'im'=>$image]);
