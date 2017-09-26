@@ -28,7 +28,8 @@
     <style>
         body {
             margin: 0;
-            background-color: #495867;
+            height:100vh;
+           background-color: rgba(255, 255, 255, 0.95);
         }
     </style>
 
@@ -42,7 +43,7 @@
     <div class="aligner">
 
         <div id="menu-item-project">
-            <a id="link-two" href="index.html" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #22AAA1"> <i class="is-paddingless ion-ios-home" style="color: #22AAA1"></i></a>
+            <a id="link-two" href="/" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #22AAA1"> <i class="is-paddingless ion-ios-home" style="color: #22AAA1"></i></a>
         </div>
     </div>
     <a href="#section-one" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em"></i></a>

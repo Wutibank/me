@@ -100,7 +100,7 @@ body {
 }
 
 #return-to-top i {
-    color: #fff;
+    color: #555;
     margin: 0;
     position: relative;
     left: 10px;
@@ -170,7 +170,15 @@ body {
 /*project*/
 
 #section-projectlist {
+    min-height: 75vh;
     background-color: rgba(255, 255, 255, 0.95);
+}
+
+.footer-project {
+    background-color: #22aaa1;
+    height: 50px;
+    bottom: 0;
+    left: 0;
 }
 
 #section-image-project {
@@ -261,6 +269,7 @@ body {
     border: 2px solid #888;
     padding: 5px 20px !important;
     margin: 10px;
+    max-height: 40px;
 }
 
 .project-bt:hover {
@@ -393,7 +402,7 @@ input[type="radio"][id="other"]:checked~.video {
 }
 
 .tileAmimate {
-    float: left;
+    float: center;
     transition: all 1s ease-in-out;
 }
 

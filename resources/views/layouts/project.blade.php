@@ -16,12 +16,9 @@
         </div>
     </section>
 
-    <section class="section" id="section-projectlist">
+    <section class="section  is-fullheight" id="section-projectlist">
         <div class="container">
-
-
             <div class="columns is-multiline is-centered">
-
                 <input type="radio" id="reset" name="color">
                 <label for="reset" class="project-bt">ALL PROJECT</label>
 
@@ -36,7 +33,6 @@
 
                 <input type="radio" id="other" name="color">
                 <label for="other" class="project-bt">OTHER</label>
-                
 @foreach ($pj as $pro)
                 <div class="column is-4 tileAmimate {{ $pro->category }}">
                     <div class="card">
@@ -64,25 +60,13 @@
                     </div>
                 </div>
 @endforeach
-                <div class="column is-4 tileAmimate design">
-                    designnnn
-                </div>
-                <div class="column is-4 tileAmimate program">
-                    pro
-                </div>
-                <div class="column is-4 tileAmimate other">
-                    other
-                </div>
-                <div class="column is-4 tileAmimate video">
-                    vid
-                </div>
 
             </div>
-
         </div>
     </section>
-
-    <section style="background-color: #22aaa1;height: 50px">
-    </section>
+ <div class="footer-project">
+</div>
+    <!-- <section class="is-hidden-touch" style="background-color: #22aaa1;height: 50px;bottom:0">
+    </section> -->
 
     @endsection

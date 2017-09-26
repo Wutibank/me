@@ -34,6 +34,7 @@
 </head>
 
 <body>
+        <div class="pageloader"></div>
     <section class="hero is-fullheight" id="section-one">
         <div class="hero-body">
             <div class="container has-text-centered main-title">
