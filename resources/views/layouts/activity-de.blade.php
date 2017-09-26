@@ -41,14 +41,17 @@
                 </figure>
             </div>
         </div>
-
     </section>
+@php
+$number = 1;
+@endphp
     <section class="section" id="section-projectlist">
         <div class="container">
 
+            @if (!empty($act->about_head))
             <div class="columns wow fadeInDown">
                 <div class="column is-3">
-                    <sup>No 1</sup>
+                    <sup>No {{ $number }}</sup>
                     <span class="title is-5 is-uppercase">About Activity</span>
                 </div>
                 <div class="column">
@@ -56,34 +59,46 @@
 
                     <p>{{ $act->about_detail }}</p>
                 </div>
-
             </div>
-            <br>
+            @php
+            $number++;
+            @endphp
+            @endif
+         
+            @if (!empty($act->date))
             <div class="columns wow fadeInDown">
                 <div class="column is-3">
-                    <sup>No 2</sup>
+                    <sup>No {{ $number }}</sup>
                     <span class="title is-5">DATE</span>
                 </div>
                 <div class="column">
                     {{ $act->date }}
                 </div>
-
             </div>
-            <br>
+            @php
+            $number++;
+            @endphp
+            @endif
+
+            @if (!empty($act->organizer))
             <div class="columns wow fadeInDown">
                 <div class="column is-3">
-                    <sup>No 3</sup>
+                    <sup>No {{ $number }}</sup>
                     <span class="title is-5">ORGANIZER</span>
                 </div>
                 <div class="column">
                     {{ $act->organizer }}
                 </div>
-
             </div>
-            <br>
+            @php
+            $number++;
+            @endphp
+            @endif
+
+            @if (!empty($act->roles))
             <div class="columns wow fadeInDown">
                 <div class="column is-3">
-                    <sup>No 4</sup>
+                    <sup>No {{ $number }}</sup>
                     <span class="title is-5">ROLES</span>
                 </div>
                 <div class="column">
@@ -91,10 +106,15 @@
                 </div>
 
             </div>
-            <br>
+            @php
+            $number++;
+            @endphp
+            @endif
+
+            @if (!empty($ski[0]))
             <div class="columns wow fadeInDown">
                 <div class="column is-3">
-                    <sup>No 5</sup>
+                    <sup>No {{ $number }}</sup>
                     <span class="title is-5">LEARNING SKILLS</span>
                 </div>
                 <div class="column">
@@ -106,10 +126,15 @@
                 </div>
 
             </div>
-            <br>
+            @php
+            $number++;
+            @endphp
+            @endif
+
+            @if (!empty($act->link))
             <div class="columns wow fadeInDown">
                 <div class="column is-3">
-                    <sup>No 6</sup>
+                    <sup>No {{ $number }}</sup>
                     <span class="title is-5">LINK</span>
                 </div>
                 <div class="column">
@@ -117,15 +142,20 @@
                 </div>
 
             </div>
-            <br>
+            @php
+            $number++;
+            @endphp
+            @endif
+
+            @if (!empty($im[0]))
             <div class="columns">
                 <div class="column is-3 wow fadeIn" >
-                    <sup>No 7</sup>
+                    <sup>No {{ $number }}</sup>
                     <span class="title is-5">MORE IMAGE</span>
                 </div>
                 <div class="column wow fadeIn" data-wow-duration="3s">
                     <div class="columns is-multiline">
-@foreach ($im as $image)
+                        @foreach ($im as $image)
                         <div class="column is-4">
                             <div class="item">
                                 <a class="image-popup-no-margins" href="/storage/image/activities/{{ $image }}">
@@ -133,11 +163,12 @@
                                 </a>
                             </div>
                         </div>
-@endforeach
+                        @endforeach
                     </div>
                 </div>
-
             </div>
+            @endif
+
         </div>
     </section>
     <section style="background-color: #F25757;height: 50px">
