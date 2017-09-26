@@ -9,6 +9,20 @@ body {
     padding-left: 5px;
 }
 
+.card-content {
+    background-color: #f6f6f6;
+}
+
+.bt-detail i {
+    font-size: 2.8em;
+    transition: 0.3s;
+}
+
+.bt-detail:hover i {
+    font-size: 4em;
+    transition: 0.3s;
+}
+
 @media only screen and (max-width: 767px) {
     #menu-item {
         z-index: 1000;
@@ -171,7 +185,7 @@ body {
 
 #section-projectlist {
     min-height: 75vh;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: #f6f6f6;
 }
 
 .footer-project {
@@ -182,13 +196,11 @@ body {
 }
 
 #section-image-project {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 #section-image-project img {
     max-height: 30em;
-    border: 10px solid white;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #menu-item-project {
