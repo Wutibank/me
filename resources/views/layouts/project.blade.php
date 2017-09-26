@@ -37,22 +37,22 @@
                 <div class="column is-4 tileAmimate {{ $pro->category }}">
                     <div class="card">
                         <div class="card-image">
-                            <figure class="image is-4by3">
+                            <figure class="image">
                                 <img src="storage/image/project/{{ $pro->cover }}" alt="Placeholder image">
                             </figure>
                         </div>
                         <div class="card-content">
                             <div class="media">
 
-                                <div class="media-content">
+                                <div class="media-content card-content">
                                     <p class="title is-4">{{ $pro->title }}</p>
                                     <p class="subtitle is-6">{{ $pro->subtitle }}</p>
                                     <p style="color: #22AAA1">#{{ $pro->category }}</p>
                                 </div>
 
-                                <div class="media-right">
+                                <div class="media-right bt-detail">
                                     <a href="project/{{ $pro->id }}">
-                                        <i class="ion-ios-arrow-dropright-circle-outline" style="color: #777;font-size: 2.5em"></i>
+                                        <i class="ion-ios-arrow-dropright-circle-outline" style="color: rgb(34, 170, 161);"></i>
                                     </a>
                                 </div>
                             </div>

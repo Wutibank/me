@@ -32,9 +32,9 @@
                                     <p class="subtitle is-6">{{ $acti->subtitle }}</p>
                                 </div>
 
-                                <div class="media-right">
+                                <div class="media-right bt-detail">
                                     <a href="activity/{{ $acti->id }}">
-                                        <i class="ion-ios-arrow-dropright-circle-outline" style="color: #777;font-size: 2.5em"></i>
+                                        <i class="ion-ios-arrow-dropright-circle-outline" style="color: #f25757;"></i>
                                     </a>
                                 </div>
                             </div>
