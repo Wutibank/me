@@ -101,7 +101,7 @@
         <div class="owl-carousel">
            @foreach ($item_act->shuffle() as $ita)
             <div class="item item-pro">
-                <a href="project/{{$ita->id}}">
+                <a href="activity/{{$ita->id}}">
                     <img alt="" src="storage/image/activities/{{$ita->cover}}" title="{{$ita->title}}"></a>
             </div>
             @endforeach

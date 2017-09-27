@@ -54,8 +54,8 @@ class activityController extends Controller
         $activities = activity::find($id);
         $skills = activity::find($id)->pluck('skills');
         $more_image = activity::find($id)->pluck('more_image');
-        $skill = explode("&&",$skills[0]);
-        $image = explode("&&",$more_image[0]);
+        $skill = explode("&&",$skills[$id-1]);
+        $image = explode("&&",$more_image[$id-1]);
         
 
         return view('layouts.activity-de',['act'=>$activities,'ski'=>$skill,'im'=>$image]);

@@ -21,7 +21,7 @@
 @foreach ($act as $acti)
                 <div class="column is-4">
                     <div class="card">
-                        <div class="card-image ">
+                        <div class="card-image">
                             <figure class="image image-cover">
                                 <img src="storage/image/activities/{{ $acti->cover }}" alt="Placeholder image">
                             </figure>
