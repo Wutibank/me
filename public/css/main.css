@@ -40,6 +40,16 @@ body {
     height: 100%;
 }
 
+.item-pro {
+    transform: scale(1, 1);
+    transition: 1s;
+}
+
+.item-pro:hover {
+    transform: scale(1.2, 1.2);
+    transition: 1s;
+}
+
 @media only screen and (max-width: 767px) {
     #menu-item {
         z-index: 1000;

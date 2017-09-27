@@ -11,12 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
+Route::get('/', 'indexController@index');
 Route::get('about', function () {
     return view('me');
 });
 
 Route::resource('project', 'projectController');
 Route::resource('activity', 'activityController');
+
+
+

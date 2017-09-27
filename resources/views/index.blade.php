@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="storage/image/page.png" />
 
-      <!-- CSRF Token -->
-      <meta name="csrf-token" content="{{ csrf_token() }}">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>I AM WUTIBANK</title>
-   
+
     <link rel="image_src" href="image/page.png" />
     <link rel="icon" href="storage/image/favicon.png" type="image/x-icon" />
 
     <!-- Styles -->
-    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
     <link rel="stylesheet" href="{{ asset('css/main.min.css') }}">
@@ -30,11 +30,12 @@
             /*background-color: #495867;*/
             background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
         }
+
     </style>
 </head>
 
 <body>
-        <div class="pageloader"></div>
+    <div class="pageloader"></div>
     <section class="hero is-fullheight" id="section-one">
         <div class="hero-body">
             <div class="container has-text-centered main-title">
@@ -69,12 +70,13 @@
             </div>
         </div>
         <div class="owl-carousel">
-            <div class="item">
-                <a href="project-detail.html">
-                    <img alt="" src="image/ea01.png" title="โปรเจคชื่อ"></a>
+            @foreach ($item_pro->shuffle() as $itp)
+            <div class="item item-pro">
+                <a href="project/{{$itp->id}}">
+                    <img alt="" src="storage/image/project/{{$itp->cover}}" title="{{$itp->title}}"></a>
             </div>
-            <div class="item"><img alt="" src="image/ea02.png"></div>
-            <div class="item"><img alt="" src="image/ea03.png"></div>
+            @endforeach
+
         </div>
         <div class="has-text-centered">
             <a href="#section-three"> <i class="ion-ios-arrow-dropdown-outline" style="font-size: 3rem;color: white"></i> </a>
@@ -97,9 +99,12 @@
             </div>
         </div>
         <div class="owl-carousel">
-            <div class="item"><img alt="" src="image/ea01.png"></div>
-            <div class="item"><img alt="" src="image/ea02.png"></div>
-            <div class="item"><img alt="" src="image/ea03.png"></div>
+           @foreach ($item_act->shuffle() as $ita)
+            <div class="item item-pro">
+                <a href="project/{{$ita->id}}">
+                    <img alt="" src="storage/image/activities/{{$ita->cover}}" title="{{$ita->title}}"></a>
+            </div>
+            @endforeach
         </div>
         <div class="has-text-centered">
             <a href="#section-four"> <i class="ion-ios-arrow-dropdown-outline" style="font-size: 3rem;color: white"></i> </a>
@@ -177,6 +182,7 @@
                 }
             }
         });
+
     </script>
 </body>
 
