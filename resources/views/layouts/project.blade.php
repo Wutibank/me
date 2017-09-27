@@ -35,9 +35,9 @@
             @foreach ($pj->shuffle() as $pro)
             <div class="column is-6-tablet is-4-desktop tileAmimate {{ $pro->category }}">
                 <div class="card">
-                    <div class="card-image item-pro">
+                    <div class="card-image item-pro wow fadeIn" data-wow-duration="3s">
                         <figure class="image">
-                            <img src="storage/image/project/{{ $pro->cover }}" alt="Placeholder image">
+                            <img src="{{asset('storage/image/project')}}/{{$pro->cover}}" alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
@@ -49,7 +49,7 @@
                             </div>
 
                             <div class="media-right bt-detail">
-                                <a href="project/{{ $pro->id }}">
+                                <a href="{{url('project')}}/{{ $pro->id }}">
                                     <i class="ion-ios-arrow-dropright-circle-outline" style="color: rgb(34, 170, 161);"></i>
                                 </a>
                             </div>

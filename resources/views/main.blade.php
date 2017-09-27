@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@3.0.0/dist/css/ionicons.min.css">
     <link rel="stylesheet" href="{{ asset('dist/owlcarousel/assets/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('dist/owlcarousel/assets/owl.theme.default.min.css') }}">
+    
     <style>
         body {
             margin: 0;
@@ -36,14 +37,14 @@
 </head>
 
 <body>
-   
+
     @yield('body') 
 
     <!-- scroll Up-->
     <div class="aligner">
 
         <div id="menu-item-project">
-            <a id="link-two" href="/" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #22AAA1"> <i class="is-paddingless ion-ios-home" style="color: #22AAA1"></i></a>
+            <a id="link-two" href="{{url('/')}}" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #22AAA1"> <i class="is-paddingless ion-ios-home" style="color: #22AAA1"></i></a>
         </div>
     </div>
     <a href="#section-one" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em"></i></a>
@@ -52,6 +53,7 @@
     <script src="{{ asset('dist/owlcarousel/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('dist/wow/wow.min.js') }}"></script>
     <script src="{{ asset('js/script.min.js') }}"></script>
+    
     <script>
      new WOW().init();
     </script>

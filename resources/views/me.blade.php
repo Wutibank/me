@@ -225,7 +225,7 @@ Github</span>
     <!-- scroll Up-->
     <div class="aligner">
         <div id="menu-item-project">
-            <a id="link-two" href="/" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #FFCA3A"> <i class="is-paddingless ion-ios-home" style="color: #FFCA3A"></i></a>
+            <a id="link-two" href="{{url('/')}}" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #FFCA3A"> <i class="is-paddingless ion-ios-home" style="color: #FFCA3A"></i></a>
 
         </div>
     </div>

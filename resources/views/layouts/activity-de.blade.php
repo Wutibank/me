@@ -35,8 +35,8 @@
 
             <div class="has-text-centered wow fadeIn" data-wow-duration="2s">
                 <figure class="">
-                    <a class="image-popup-no-margins" href="/storage/image/activities/{{ $act->cover }}">
-                        <img src="/storage/image/activities/{{ $act->cover }}">
+                    <a class="image-popup-no-margins" href="{{asset('storage/image/activities')}}/{{ $act->cover }}">
+                        <img src="{{asset('storage/image/activities')}}/{{ $act->cover }}">
                     </a>
                 </figure>
             </div>
@@ -55,9 +55,9 @@ $number = 1;
                     <span class="title is-5 is-uppercase">About Activity</span>
                 </div>
                 <div class="column">
-                    <p class="subtitle">{{ $act->about_head }}</p>
+                    <p class="subtitle">{!!$act->about_head !!}</p>
 
-                    <p>{{ $act->about_detail }}</p>
+                    <p>{!! $act->about_detail !!}</p>
                 </div>
             </div>
             @php
@@ -158,8 +158,8 @@ $number = 1;
                         @foreach ($im as $image)
                         <div class="column is-4">
                             <div class="item">
-                                <a class="image-popup-no-margins" href="/storage/image/activities/{{ $image }}">
-                                    <img alt="" src="/storage/image/activities/{{ $image }}">
+                                <a class="image-popup-no-margins" href="{{asset('storage/image/activities')}}/{{ $image }}">
+                                    <img alt="" src="{{asset('storage/image/activities')}}/{{ $image }}">
                                 </a>
                             </div>
                         </div>
@@ -176,7 +176,7 @@ $number = 1;
 
         <div class="aligner">
         <div id="menu-item-project" style="top: 50px;">
-            <a id="link-two" href="/activity" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #F25757"> <i class="is-paddingless ion-md-arrow-round-back" style="color: #F25757"></i></a>
+            <a id="link-two" href="{{url('activity')}}" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #F25757"> <i class="is-paddingless ion-md-arrow-round-back" style="color: #F25757"></i></a>
 
         </div>
     </div>

@@ -65,15 +65,15 @@
                         <div class="title has-text-white is-size-2-touch is-size-1-desktop" style="padding-bottom: 0.1em"> My Projects </div>
                         <div class="subtitle has-text-white"> ความรู้จากการลงมือทำ </div>
                     </div>
-                    <div style="padding-top: 0.4em"> <a href="project" class="hbtn hb-fill-bottom hpad2 is-uppercase">show more</a> </div>
+                    <div style="padding-top: 0.4em"> <a href="{{url('project')}}" class="hbtn hb-fill-bottom hpad2 is-uppercase">show more</a> </div>
                 </div>
             </div>
         </div>
         <div class="owl-carousel">
             @foreach ($item_pro->shuffle() as $itp)
             <div class="item item-pro">
-                <a href="project/{{$itp->id}}">
-                    <img alt="" src="storage/image/project/{{$itp->cover}}" title="{{$itp->title}}"></a>
+                <a href="{{url('project')}}/{{$itp->id}}">
+                    <img alt="" src="{{asset('storage/image/project')}}/{{$itp->cover}}" title="{{$itp->title}}"></a>
             </div>
             @endforeach
 
@@ -94,15 +94,15 @@
                         <div class="title has-text-white is-size-2-touch is-size-1-desktop" style="padding-bottom: 0.1em"> My Activities </div>
                         <div class="subtitle has-text-white"> แรงบันดาลใจสร้างประสบการณ์ </div>
                     </div>
-                    <div style="padding-top: 0.4em"> <a href="activity" class="hbtn hb-fill-bottom hpad2 is-uppercase">show more</a> </div>
+                    <div style="padding-top: 0.4em"> <a href="{{url('activity')}}" class="hbtn hb-fill-bottom hpad2 is-uppercase">show more</a> </div>
                 </div>
             </div>
         </div>
         <div class="owl-carousel">
            @foreach ($item_act->shuffle() as $ita)
             <div class="item item-pro">
-                <a href="activity/{{$ita->id}}">
-                    <img alt="" src="storage/image/activities/{{$ita->cover}}" title="{{$ita->title}}"></a>
+                <a href="{{url('activity')}}/{{$ita->id}}">
+                    <img alt="" src="{{asset('storage/image/activities')}}/{{$ita->cover}}" title="{{$ita->title}}"></a>
             </div>
             @endforeach
         </div>
@@ -123,7 +123,7 @@
                             <div class="is-block">
                                 <div class="title has-text-white is-size-2-touch is-size-1-desktop" style="padding-bottom: 0.2em"> My Story </div>
                                 <div class="subtitle has-text-white"> เรื่องราวการเดินทางของชีวิต </div>
-                                <a href="about" class="hbtn hb-fill-bottom hpad2 is-uppercase">About Me</a>
+                                <a href="{{url('about')}}" class="hbtn hb-fill-bottom hpad2 is-uppercase">About Me</a>
 
                             </div>
                         </div>

@@ -18,12 +18,12 @@
         <div class="container">
 
             <div class="columns is-multiline">
-@foreach ($act as $acti)
+@foreach ($act->shuffle() as $acti)
                 <div class="column is-4">
                     <div class="card">
-                        <div class="card-image">
+                        <div class="card-image wow fadeIn" data-wow-duration="3s">
                             <figure class="image image-cover">
-                                <img src="storage/image/activities/{{ $acti->cover }}" alt="Placeholder image">
+                                <img src="{{asset('storage/image/activities')}}/{{ $acti->cover }}" alt="Placeholder image">
                             </figure>
                         </div>
                         <div class="card-content">
@@ -34,7 +34,7 @@
                                 </div>
 
                                 <div class="media-right bt-detail">
-                                    <a href="activity/{{ $acti->id }}">
+                                    <a href="{{url('activity')}}/{{ $acti->id }}">
                                         <i class="ion-ios-arrow-dropright-circle-outline" style="color: #f25757;"></i>
                                     </a>
                                 </div>

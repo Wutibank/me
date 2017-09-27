@@ -41,8 +41,8 @@
             <div class="has-text-centered wow fadeIn" data-wow-duration="2s">
                 
                     @if (empty($pj->video))
-                    <a class="image-popup-no-margins" href="/storage/image/project/{{ $pj->cover }}">
-                        <figure class=""><img src="/storage/image/project/{{ $pj->cover }}">
+                    <a class="image-popup-no-margins" href="{{asset('storage/image/project')}}/{{ $pj->cover }}">
+                        <figure class=""><img src="{{asset('storage/image/project')}}/{{ $pj->cover }}">
                         </figure>
                     </a>
                     @else
@@ -140,7 +140,7 @@ $number = 1;
                     <span class="title is-5">LINK</span>
                 </div>
                 <div class="column">
-                    <a href="{{ $pj->subtitle }}">{{ $pj->link }}</a>
+                    <a href="{{ $pj->link }}">{{ $pj->link }}</a>
                 </div>
             </div>
             @php
@@ -159,8 +159,8 @@ $number = 1;
                      @foreach ($im as $image)
                         <div class="column is-4 has-text-centered">
                             <div class="item">
-                                <a class="image-popup-no-margins" href="/storage/image/project/{{ $image }}">
-                                    <img alt="" src="/storage/image/project/{{ $image }}">
+                                <a class="image-popup-no-margins" href="{{asset('storage/image/project')}}/{{ $image }}">
+                                    <img alt="" src="{{asset('storage/image/project')}}/{{ $image }}">
                                 </a>
                             </div>
                         </div>
@@ -177,7 +177,7 @@ $number = 1;
 
         <div class="aligner">
         <div id="menu-item-project" style="top: 50px;">
-            <a id="link-two" href="/project" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #22AAA1"> <i class="is-paddingless ion-md-arrow-round-back" style="color: #22AAA1"></i></a>
+            <a id="link-two" href="{{url('project')}}" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #22AAA1"> <i class="is-paddingless ion-md-arrow-round-back" style="color: #22AAA1"></i></a>
 
         </div>
     </div>
