@@ -148,7 +148,7 @@ $number = 1;
             @endphp
             @endif
 
-            @if (!empty($image))
+            @if (!empty($im))
             <div class="columns">
                 <div class="column is-3 wow fadeInDown">
                     <sup>No {{ $number }}</sup>

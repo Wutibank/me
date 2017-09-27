@@ -384,7 +384,7 @@ input[type="radio"][id="program"]:checked+label {
 
 input[type="radio"][id="program"]:checked~.design,
 input[type="radio"][id="program"]:checked~.video,
-input[type="radio"][id="program"]:checked~.other {
+input[type="radio"][id="program"]:checked~.website {
     width: 0;
     height: 0;
     padding: 0;
@@ -400,7 +400,7 @@ input[type="radio"][id="design"]:checked+label {
 
 input[type="radio"][id="design"]:checked~.program,
 input[type="radio"][id="design"]:checked~.video,
-input[type="radio"][id="design"]:checked~.other {
+input[type="radio"][id="design"]:checked~.website {
     width: 0;
     height: 0;
     padding: 0;
@@ -416,7 +416,7 @@ input[type="radio"][id="video"]:checked+label {
 
 input[type="radio"][id="video"]:checked~.program,
 input[type="radio"][id="video"]:checked~.design,
-input[type="radio"][id="video"]:checked~.other {
+input[type="radio"][id="video"]:checked~.website {
     width: 0;
     height: 0;
     padding: 0;
@@ -424,15 +424,15 @@ input[type="radio"][id="video"]:checked~.other {
     opacity: 0;
 }
 
-input[type="radio"][id="other"]:checked+label {
+input[type="radio"][id="website"]:checked+label {
     border: 2px solid #fff;
     color: #fff;
     background: #F25757;
 }
 
-input[type="radio"][id="other"]:checked~.program,
-input[type="radio"][id="other"]:checked~.design,
-input[type="radio"][id="other"]:checked~.video {
+input[type="radio"][id="website"]:checked~.program,
+input[type="radio"][id="website"]:checked~.design,
+input[type="radio"][id="website"]:checked~.video {
     width: 0;
     height: 0;
     padding: 0;
