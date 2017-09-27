@@ -11,7 +11,7 @@
       <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>About Me</title>
    
-    <link rel="image_src" href="{{ asset('storage/image/page.png') }}" />
+    <link rel="image_src" href="{{ asset('storage/image/page.jpg') }}" />
     <link rel="icon" href="{{ asset('storage/image/favicon.png') }}" type="image/x-icon" />
 
     <!-- Styles -->

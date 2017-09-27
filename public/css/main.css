@@ -13,13 +13,14 @@ body {
     background-color: #f6f6f6;
 }
 
-.bt-detail i {
+.bt-detail {
     font-size: 2.8em;
+    transform: scale(1, 1);
     transition: 0.3s;
 }
 
-.bt-detail:hover i {
-    font-size: 4em;
+.bt-detail:hover {
+    transform: scale(1.3, 1.3);
     transition: 0.3s;
 }
 
