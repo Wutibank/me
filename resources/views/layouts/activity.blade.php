@@ -1,16 +1,16 @@
 @extends('main')
-@section('title', 'My Activities')
+@section('title', 'MY ACTIVITIES')
 @section('color', '#F25757') 
 @section('body')
 <section id="section-three">
         <div class="container">
             <div class="has-text-centered">
-                <i class="ion-ios-bulb" style="font-size: 20vmin;color: #fff;padding-right: 0.2em"></i>
+                <i class="ion-md-bulb" style="font-size: 20vmin;color: #fff;padding-right: 0.2em"></i>
 
                 <div class="is-inline-block ">
-                    <div class="title has-text-white is-size-2-touch is-size-1-desktop" style="padding-bottom: 0.1em"> My Activities </div>
+                    <div class="title has-text-white is-size-2-touch is-size-1-desktop" style="padding-bottom: 0.1em"> MY ACTIVITIES </div>
                         <div class="subtitle has-text-white">
-                        แรงบันดาลใจสร้างประสบการณ์ </div>
+                        สรรประสบการณ์สร้างแรงบันดาลใจ </div>
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@
                     <div class="card">
                         <div class="card-image wow fadeIn" data-wow-duration="3s">
                             <figure class="image image-cover">
-                                <img src="{{asset('storage/image/activities')}}/{{ $acti->cover }}" alt="Placeholder image">
+                                <img src="{{asset('storage/image/activities')}}/{{ $acti->cover_thumb }}" alt="Placeholder image">
                             </figure>
                         </div>
                         <div class="card-content">

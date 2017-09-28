@@ -60,21 +60,21 @@
                 <div>
                     <a href="#section-two" class="wow slideInDown" data-wow-duration="2s">
                         <div class="bt-menu-head is-inline-block">
-                            <i class="is-paddingless ion-ios-briefcase">
+                            <i class="is-paddingless ion-md-desktop">
                         </i>
                         </div>
                     </a>
 
                     <a href="#section-three" class="wow slideInDown" data-wow-duration="2s">
                         <div class="bt-menu-head is-inline-block">
-                            <i class="is-paddingless ion-ios-bulb">
+                            <i class="is-paddingless ion-md-bulb">
                         </i>
                         </div>
                     </a>
 
                     <a href="#section-four" class="wow slideInDown" data-wow-duration="2s">
                         <div class="bt-menu-head is-inline-block">
-                            <i class="is-paddingless ion-ios-body">
+                            <i class="is-paddingless ion-md-person">
                         </i>
                         </div>
                     </a>
@@ -95,11 +95,11 @@
         <div class="hero-body">
             <div class="container">
                 <div class="has-text-centered">
-                    <div class="is-inline-block wow swing" data-wow-duration="3s" data-wow-iteration="3">
-                        <i class="ion-ios-briefcase" style="font-size: 20vmin;color: #fff;padding-right: 0.2em"></i></div>
+                    <div class="is-inline-block wow flash" data-wow-duration="3s" data-wow-iteration="3">
+                        <i class="ion-md-desktop" style="font-size: 20vmin;color: #fff;padding-right: 0.2em"></i></div>
                     <div class="is-inline-block ">
-                        <div class="title has-text-white is-size-2-touch is-size-1-desktop" style="padding-bottom: 0.1em"> My Projects </div>
-                        <div class="subtitle has-text-white"> ความรู้จากการลงมือทำ </div>
+                        <div class="title has-text-white is-size-2-touch is-size-1-desktop" style="padding-bottom: 0.1em">MY PROJECTS</div>
+                        <div class="subtitle has-text-white"> ค้นความรู้ด้วยลงมือทำ </div>
                     </div>
                     <div style="padding-top: 0.4em"> <a href="{{url('project')}}" class="hbtn hb-fill-bottom hpad2 is-uppercase">show more</a> </div>
                 </div>
@@ -109,7 +109,7 @@
             @foreach ($item_pro->shuffle() as $itp)
             <div class="item item-pro">
                 <a href="{{url('project')}}/{{$itp->id}}">
-                    <img alt="" src="{{asset('storage/image/project')}}/{{$itp->cover}}" title="{{$itp->title}}"></a>
+                    <img alt="" src="{{asset('storage/image/project')}}/{{$itp->cover_thumb}}" title="{{$itp->title}}"></a>
             </div>
             @endforeach
 
@@ -126,12 +126,12 @@
             <div class="container">
                 <div class="has-text-centered">
                     <div class="is-inline-block wow tada" data-wow-duration="3s" data-wow-iteration="3">
-                        <i class="ion-ios-bulb" style="font-size: 20vmin;color: #fff;padding-right: 0.2em">
+                        <i class="ion-md-bulb" style="font-size: 20vmin;color: #fff;padding-right: 0.2em">
                     </i>
                     </div>
                     <div class="is-inline-block ">
-                        <div class="title has-text-white is-size-2-touch is-size-1-desktop" style="padding-bottom: 0.1em"> My Activities </div>
-                        <div class="subtitle has-text-white"> แรงบันดาลใจสร้างประสบการณ์ </div>
+                        <div class="title has-text-white is-size-2-touch is-size-1-desktop" style="padding-bottom: 0.1em">MY ACTIVITIES</div>
+                        <div class="subtitle has-text-white"> สรรประสบการณ์สร้างแรงบันดาลใจ </div>
                     </div>
                     <div style="padding-top: 0.4em"> <a href="{{url('activity')}}" class="hbtn hb-fill-bottom hpad2 is-uppercase">show more</a> </div>
                 </div>
@@ -141,7 +141,7 @@
             @foreach ($item_act->shuffle() as $ita)
             <div class="item item-pro">
                 <a href="{{url('activity')}}/{{$ita->id}}">
-                    <img alt="" src="{{asset('storage/image/activities')}}/{{$ita->cover}}" title="{{$ita->title}}"></a>
+                    <img alt="" src="{{asset('storage/image/activities')}}/{{$ita->cover_thumb}}" title="{{$ita->title}}"></a>
             </div>
             @endforeach
         </div>
@@ -158,10 +158,11 @@
                 <div class="columns">
                     <div class="column">
                         <div class="has-text-centered">
-                            <div class="is-inline-block wow bounce" data-wow-duration="3s" data-wow-iteration="3"><i class="ion-ios-body" style="font-size: 18vmin;color: #fff;padding-right: 0.2em"></i></div>
+                            <div class="is-inline-block wow flipInX" data-wow-duration="3s" data-wow-iteration="3">
+                                <i class="ion-md-person" style="font-size: 18vmin;color: #fff;padding-right: 0.2em"></i></div>
                             <div class="is-block">
                                 <div class="title has-text-white is-size-2-touch is-size-1-desktop" style="padding-bottom: 0.2em"> My Story </div>
-                                <div class="subtitle has-text-white"> เรื่องราวการเดินทางของชีวิต </div>
+                                <div class="subtitle has-text-white"> บทเรียงร้อยการเดินทาง </div>
                                 <a href="{{url('about')}}" class="hbtn hb-fill-bottom hpad2 is-uppercase">About Me</a>
 
                             </div>
@@ -183,17 +184,17 @@
         <div id="menu-item">
             <a id="link-two" href="#section-two">
                 <div class="bt-menu is-inline-block">
-                    <i class="is-paddingless ion-ios-briefcase" style="color: #fff"></i>
+                    <i class="is-paddingless ion-md-desktop" style="color: #fff"></i>
                 </div>
             </a>
-            <a id="link-three" href="#section-three ">
+            <a id="link-three" href="#section-three">
                 <div class="bt-menu is-inline-block" style="background-color: #F25757">
-                    <i class="is-paddingless ion-ios-bulb"></i>
+                    <i class="is-paddingless ion-md-bulb"></i>
                 </div>
             </a>
             <a id="link-four" href="#section-four">
                 <div class="bt-menu is-inline-block" style="background-color: #FFCA3A">
-                    <i class="is-paddingless ion-ios-body"></i>
+                    <i class="is-paddingless ion-md-person"></i>
                 </div>
             </a>
         </div>

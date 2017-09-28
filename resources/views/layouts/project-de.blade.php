@@ -36,7 +36,7 @@
 
             @if (empty($pj->video))
             <a class="image-popup-no-margins" href="{{asset('storage/image/project')}}/{{ $pj->cover }}">
-                <figure class=""><img src="{{asset('storage/image/project')}}/{{ $pj->cover }}">
+                <figure class=""><img src="{{asset('storage/image/project')}}/{{ $pj->cover_thumb }}">
                 </figure>
             </a>
             @else

@@ -35,7 +35,7 @@
         <div class="has-text-centered wow fadeIn" data-wow-duration="2s">
             <figure class="">
                 <a class="image-popup-no-margins" href="{{asset('storage/image/activities')}}/{{ $act->cover }}">
-                        <img src="{{asset('storage/image/activities')}}/{{ $act->cover }}">
+                        <img src="{{asset('storage/image/activities')}}/{{ $act->cover_thumb }}">
                     </a>
             </figure>
         </div>

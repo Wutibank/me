@@ -41,14 +41,14 @@
     <section id="section-four">
         <div class="container">
             <div class="has-text-centered">
-                <i class="ion-ios-body" style="font-size: 20vmin;color: #fff;padding-right: 0.2em"></i>
+                <i class="ion-md-person" style="font-size: 20vmin;color: #fff;padding-right: 0.2em"></i>
 
                 <div class="is-inline-block ">
                     <div class="title has-text-white is-size-2-touch is-size-1-desktop" style="padding-bottom: 0.2em">
-                        My Story
+                        MY STORY
                     </div>
                     <div class="subtitle has-text-white">
-                        เรื่องราวการเดินทางของชีวิต
+                       บทร้อยเรียงการเดินทาง
                     </div>
                 </div>
 

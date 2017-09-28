@@ -1,17 +1,17 @@
  @extends('main') 
- @section('title', 'My Projects')
+ @section('title', 'MY PROJECTS')
  @section('color', '#22AAA1') 
  @section('body')
 <section id="section-two">
     <div class="container">
         <div class="has-text-centered">
-            <i class="ion-ios-briefcase" style="font-size: 20vmin;color: #fff;padding-right: 0.2em"></i>
+            <i class="ion-md-desktop" style="font-size: 20vmin;color: #fff;padding-right: 0.2em"></i>
             <div class="is-inline-block ">
                 <div class="title has-text-white is-size-2-touch is-size-1-desktop" style="padding-bottom: 0.2em">
-                    My Projects
+                    MY PROJECTS
                 </div>
                 <div class="subtitle has-text-white">
-                    สืบเสาะความรู้ด้วยการลงมือทำ
+                    ค้นความรู้ด้วยลงมือทำ
                 </div>
             </div>
         </div>
@@ -40,7 +40,7 @@
                 <div class="card">
                     <div class="card-image item-pro wow fadeIn" data-wow-duration="3s">
                         <figure class="image">
-                            <img src="{{asset('storage/image/project')}}/{{$pro->cover}}" alt="Placeholder image">
+                            <img src="{{asset('storage/image/project')}}/{{$pro->cover_thumb}}" alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
