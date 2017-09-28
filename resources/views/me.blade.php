@@ -5,17 +5,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="{{ asset('storage/image/page.png') }}" />
-
-      <!-- CSRF Token -->
-      <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta property="og:image" content="{{ asset('storage/image/page2.jpg') }}" />
+    <meta name="theme-color" content="#FFCA3A">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>About Me</title>
-   
-    <link rel="image_src" href="{{ asset('storage/image/page.jpg') }}" />
+
+    <link rel="image_src" href="{{ asset('storage/image/page2.jpg') }}" />
     <link rel="icon" href="{{ asset('storage/image/favicon.png') }}" type="image/x-icon" />
 
     <!-- Styles -->
-    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
     <link rel="stylesheet" href="{{ asset('css/main.min.css') }}">
@@ -31,6 +31,7 @@
             margin: 0;
             background-color: #495867;
         }
+
     </style>
 
 </head>
@@ -54,12 +55,12 @@
             </div>
         </div>
     </section>
-    <div class="parallax-cover is-hidden-touch wow fadeIn" style="background-image: url('{{ asset('storage/image/msp01.JPG') }}');"></div>
+    <div class="parallax-cover is-hidden-touch wow fadeIn" style="background-image: url('{{ asset('storage/image/my01.jpg') }}');"></div>
 
     <section class="hero is-fullheight" id="section-projectlist">
 
         <div class="container">
-            <img class="is-hidden-desktop  wow fadeIn" src="{{ asset('storage/image/msp01.JPG') }}">
+            <img class="is-hidden-desktop  wow fadeIn" src="{{ asset('storage/image/my01.jpg') }}">
             <div style="padding: 0 6vmin">
                 <div class="has-text-centered head-me wow fadeIn">
 
@@ -225,19 +226,22 @@ Github</span>
     <!-- scroll Up-->
     <div class="aligner">
         <div id="menu-item-project">
-            <a id="link-two" href="{{url('/')}}" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #FFCA3A"> <i class="is-paddingless ion-ios-home" style="color: #FFCA3A"></i></a>
-
+            <div class="bt-menu" style="background-color: #FFCA3A">
+                <a id="link-two" href="{{url('/')}}">
+                    <i class="is-paddingless ion-ios-home"></i></a>
+            </div>
         </div>
     </div>
     <a href="#section-one" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em;color: #FFCA3A"></i></a>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="{{ asset('dist/owlcarousel/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('dist/wow/wow.min.js') }}"></script>
     <script src="{{ asset('dist/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
     <script src="{{ asset('js/script.min.js') }}"></script>
     <script>
         new WOW().init();
+
     </script>
 </body>
 

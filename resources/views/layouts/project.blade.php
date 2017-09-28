@@ -1,4 +1,7 @@
- @extends('main') @section('title', 'My Projects') @section('body')
+ @extends('main') 
+ @section('title', 'My Projects')
+ @section('color', '#22AAA1') 
+ @section('body')
 <section id="section-two">
     <div class="container">
         <div class="has-text-centered">

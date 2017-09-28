@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="{{ asset('storage/image/page.png') }}" />
+    <meta property="og:image" content="{{ asset('storage/image/page2.jpg') }}" />
+    <meta name="theme-color" content="#4b7698">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>I AM WUTIBANK</title>
 
-    <link rel="image_src" href="{{ asset('image/page.jpg') }}" />
+    <link rel="image_src" href="{{ asset('storage/image/page2.jpg') }}" />
     <link rel="icon" href="{{ asset('storage/image/favicon.png') }}" type="image/x-icon" />
 
     <!-- Styles -->
@@ -43,8 +44,8 @@
                 <p class="subtitle has-text-white wow slideInDown"> Now, It's Me </p>
                 <div>
                     <a href="#section-two" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir wow slideInDown" data-wow-duration="2s" style="background-color: #22AAA1"> <i class="is-paddingless ion-ios-briefcase" style="font-size: 2em;color: #22AAA1"></i></a>
-                    <a href="#section-three" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir wow slideInDown" data-wow-duration="3s" style="background-color: #F25757"> <i class="is-paddingless ion-ios-bulb" style="font-size: 2em;color: #F25757"></i></a>
-                    <a href="#section-four" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir wow slideInDown" data-wow-duration="4s" style="background-color: #FFCA3A"> <i class="is-paddingless ion-ios-body" style="font-size: 2em;color: #FFCA3A"></i></a>
+                    <a href="#section-three" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir wow slideInDown" data-wow-duration="2s" style="background-color: #F25757"> <i class="is-paddingless ion-ios-bulb" style="font-size: 2em;color: #F25757"></i></a>
+                    <a href="#section-four" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir wow slideInDown" data-wow-duration="2s" style="background-color: #FFCA3A"> <i class="is-paddingless ion-ios-body" style="font-size: 2em;color: #FFCA3A"></i></a>
                 </div>
             </div>
         </div>
@@ -99,7 +100,7 @@
             </div>
         </div>
         <div class="owl-carousel">
-           @foreach ($item_act->shuffle() as $ita)
+            @foreach ($item_act->shuffle() as $ita)
             <div class="item item-pro">
                 <a href="{{url('activity')}}/{{$ita->id}}">
                     <img alt="" src="{{asset('storage/image/activities')}}/{{$ita->cover}}" title="{{$ita->title}}"></a>
@@ -142,48 +143,54 @@
     <!-- scroll Up-->
     <div class="aligner is-hidden-mobile">
         <div id="menu-item">
-            <a id="link-two" href="#section-two" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #22AAA1"> <i class="is-paddingless ion-ios-briefcase" style="color: #22AAA1"></i></a>
-            <a id="link-three" href="#section-three" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #F25757"> <i class="is-paddingless ion-ios-bulb" style="color: #F25757"></i></a>
-            <a id="link-four" href="#section-four" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #FFCA3A"> <i class="is-paddingless ion-ios-body" style="color: #FFCA3A"></i></a>
-        </div>
-    </div> <a href="#section-one" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em"></i></a>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="{{ asset('dist/owlcarousel/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('dist/wow/wow.min.js') }}"></script>
-    <script src="{{ asset('js/script.min.js') }}"></script>
-    <script>
-        new WOW().init();
+            <div class="bt-menu is-inline-block">
+                <a id="link-two" href="#section-two">
+                    <i class="is-paddingless ion-ios-briefcase" style="color: #fff"></i></a>
+            </div>
+            <div class="bt-menu is-inline-block" style="background-color: #F25757">
+                <a id="link-three" href="#section-three "> <i class="is-paddingless ion-ios-bulb"></i></a>
+            </div>
+            <div class="bt-menu is-inline-block" style="background-color: #FFCA3A">
+                <a id="link-four" href="#section-four"> <i class="is-paddingless ion-ios-body"></i></a>
+            </div>
+        </div> <a href="#section-one" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em"></i></a>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="{{ asset('dist/owlcarousel/owl.carousel.min.js') }}"></script>
+        <script src="{{ asset('dist/wow/wow.min.js') }}"></script>
+        <script src="{{ asset('js/script.min.js') }}"></script>
+        <script>
+            new WOW().init();
 
-        $(document).ready(function() {
-            $(".owl-carousel").owlCarousel();
-        });
+            $(document).ready(function() {
+                $(".owl-carousel").owlCarousel();
+            });
 
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: false,
-            autoplay: true,
-            autoplayTimeout: 1500,
-            autoplayHoverPause: true,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: false
-                },
-                769: {
-                    items: 2,
-                    nav: false
-                },
-                1008: {
-                    items: 4,
-                    loop: true,
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 1500,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    769: {
+                        items: 2,
+                        nav: false
+                    },
+                    1008: {
+                        items: 4,
+                        loop: true,
+                    }
                 }
-            }
-        });
+            });
 
-    </script>
+        </script>
 </body>
 
 </html>

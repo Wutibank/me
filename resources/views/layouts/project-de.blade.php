@@ -1,9 +1,8 @@
 @extends('detail')
-
 @section('title')
  {{ $pj->title }}
 @endsection
-
+@section('color', '#22AAA1') 
 @section('body')
 <i id="top"></i>
   <section class="section" id="section-two">

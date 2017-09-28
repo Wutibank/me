@@ -1,4 +1,8 @@
 @extends('detail')
+@section('title')
+ {{ $act->title }}
+@endsection
+@section('color', '#F25757') 
 @section('body')
 <i id="top"></i>
     <section class="section" id="section-three">

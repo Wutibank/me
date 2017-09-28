@@ -1,5 +1,6 @@
 @extends('main')
- @section('title', 'My Activities')
+@section('title', 'My Activities')
+@section('color', '#F25757') 
 @section('body')
 <section id="section-three">
         <div class="container">
