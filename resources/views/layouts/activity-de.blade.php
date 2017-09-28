@@ -42,7 +42,7 @@
     </div>
 </section>
 @php $number = 1; @endphp
-<section class="section" id="section-projectlist">
+<section class="section" id="section-activitylist">
     <div class="container">
 
         @if (!empty($act->about_head))

@@ -48,7 +48,7 @@
                         MY STORY
                     </div>
                     <div class="subtitle has-text-white">
-                       บทร้อยเรียงการเดินทาง
+                       บทเรียงร้อยการเดินทาง
                     </div>
                 </div>
 
@@ -57,7 +57,7 @@
     </section>
     <div class="parallax-cover is-hidden-touch wow fadeIn" style="background-image: url('{{ asset('storage/image/my01.jpg') }}');"></div>
 
-    <section class="hero is-fullheight" id="section-projectlist">
+    <section class="hero is-fullheight" id="section-melist">
 
         <div class="container">
             <img class="is-hidden-desktop  wow fadeIn" src="{{ asset('storage/image/my01.jpg') }}">
@@ -107,7 +107,7 @@ CURRICULUM VITAE (CV)</span>
         </div>
     </section>
     <div class="parallax-cover wow fadeIn" style="background-image: url('{{ asset('storage/image/skills.jpg') }}');"></div>
-    <section class="hero is-fullheight" id="section-projectlist" style="padding-bottom: 2em">
+    <section class="hero is-fullheight" id="section-melist" style="padding-bottom: 2em">
         <div class="container">
             <div style="padding: 0 6vmin">
                 <div class="has-text-centered head-me wow fadeIn">
@@ -161,7 +161,7 @@ CURRICULUM VITAE (CV)</span>
     </section>
 
     <div class="parallax-cover wow fadeIn" style="background-image: url('{{ asset('storage/image/connect.jpg') }}');"></div>
-    <section class="hero is-fullheight" id="section-projectlist">
+    <section class="hero is-fullheight" id="section-melist">
         <div class="container">
             <div style="padding: 0 6vmin">
                 <div class="has-text-centered head-me  wow fadeIn">

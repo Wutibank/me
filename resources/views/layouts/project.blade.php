@@ -1,7 +1,4 @@
- @extends('main') 
- @section('title', 'MY PROJECTS')
- @section('color', '#22AAA1') 
- @section('body')
+ @extends('main') @section('title', 'MY PROJECTS') @section('color', '#22AAA1') @section('body')
 <section id="section-two">
     <div class="container">
         <div class="has-text-centered">
@@ -33,9 +30,7 @@
             <label for="design" class="project-bt">DESIGN &amp; 3D MODEL</label>
 
             <input type="radio" id="video" name="color">
-            <label for="video" class="project-bt">VIDEO PRODUCTION</label>
-
-            @foreach ($pj->shuffle() as $pro)
+            <label for="video" class="project-bt">VIDEO PRODUCTION</label> @foreach ($pj->shuffle() as $pro)
             <div class="column is-6-tablet is-4-desktop tileAmimate {{ $pro->category }}">
                 <div class="card">
                     <div class="card-image item-pro wow fadeIn" data-wow-duration="3s">
@@ -67,7 +62,5 @@
 </section>
 <div class="footer-project">
 </div>
-<!-- <section class="is-hidden-touch" style="background-color: #22aaa1;height: 50px;bottom:0">
-    </section> -->
 
 @endsection

@@ -62,15 +62,16 @@ body {
     width: 3.5em;
     height: 3.5em;
     top: 0;
-    text-align: center;
     background-color: #22AAA1;
+    text-align: center;
     border-radius: 100%;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
     transition: 0.3s;
 }
 
 .bt-menu:hover {
-    transform: scale(1.4, 1.4);
+    transform: scale(1.2, 1.2);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
     transition: 0.3s;
 }
 
@@ -103,7 +104,7 @@ body {
 .bt-menu-head:hover {
     border-radius: 100%;
     background-color: rgba(255, 255, 255, 0.5);
-    transform: scale(1.4, 1.4);
+    transform: scale(1.3, 1.3);
     transition: 1s;
 }
 
@@ -244,7 +245,7 @@ body {
 
 #section-projectlist {
     min-height: 75vh;
-    background-color: #f6f6f6;
+    background-color: #EAFDFB;
 }
 
 .footer-project {
@@ -291,6 +292,11 @@ body {
 
 /*Activity*/
 
+#section-activitylist {
+    min-height: 75vh;
+    background-color: #FFF6F5;
+}
+
 #image-cover {
     min-height: 200px;
 }
@@ -300,6 +306,11 @@ body {
 
 
 /*me*/
+
+#section-melist {
+    min-height: 75vh;
+    background-color: #FEF9F0;
+}
 
 .head-me {
     padding-top: 2em;
