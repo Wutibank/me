@@ -1,6 +1,6 @@
 //menu on scroll
 $(window).scroll(function () {
-    if ($(this).scrollTop() >= 200) { // If page is scrolled more than 50px
+    if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
         $('#return-to-top').fadeIn(200); // Fade in the arrow
         $('#menu-item').fadeIn(200); // Fade in the arrow
         $('#menu-item-project').fadeIn(200);

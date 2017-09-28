@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="{{ asset('dist/owlcarousel/assets/owl.theme.default.min.css') }}">
     <style>
         body {
-            /*background-color: #495867;*/
+            background-color: #495867;
             /*            background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);*/
         }
         
@@ -36,13 +36,13 @@
             position: absolute;
             display: block;
             width: 100%;
-            height: 100%;
+            height: 100vh;
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
             background-image: url("{{asset('storage/image/bg.jpeg')}}");
-            background-position-x: 50%;
+            background-position: center;
             background-size: cover;
         }
 
@@ -54,18 +54,39 @@
     <section class="hero is-fullheight" id="section-one">
         <div class="hero-body">
             <div class="container has-text-centered main-title">
-                <p class="title has-text-white hbtn hb-border-bottom-br4 wow zoomIn" data-wow-duration="2s" style="padding: 10px 18px;margin-left: 0px;">WUTIBANK</p>
-                <p class="subtitle has-text-white wow slideInDown"> Now, It's Me </p>
+                <p class="title is-size-2-mobile has-text-white hbtn hb-border-bottom-br4 wow zoomIn" data-wow-duration="2s" style="padding: 10px 18px;margin-left: 0px;">WUTIBANK</p>
+                <p class="subtitle has-text-white wow slideInDown" style="padding-top:15px;"> Now, It's Me </p>
+
                 <div>
-                    <a href="#section-two" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir wow slideInDown" data-wow-duration="2s" style="background-color: #22AAA1"> <i class="is-paddingless ion-ios-briefcase" style="font-size: 2em;color: #22AAA1"></i></a>
-                    <a href="#section-three" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir wow slideInDown" data-wow-duration="2s" style="background-color: #F25757"> <i class="is-paddingless ion-ios-bulb" style="font-size: 2em;color: #F25757"></i></a>
-                    <a href="#section-four" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir wow slideInDown" data-wow-duration="2s" style="background-color: #FFCA3A"> <i class="is-paddingless ion-ios-body" style="font-size: 2em;color: #FFCA3A"></i></a>
+                    <a href="#section-two" class="wow slideInDown" data-wow-duration="2s">
+                        <div class="bt-menu-head is-inline-block">
+                            <i class="is-paddingless ion-ios-briefcase">
+                        </i>
+                        </div>
+                    </a>
+
+                    <a href="#section-three" class="wow slideInDown" data-wow-duration="2s">
+                        <div class="bt-menu-head is-inline-block">
+                            <i class="is-paddingless ion-ios-bulb">
+                        </i>
+                        </div>
+                    </a>
+
+                    <a href="#section-four" class="wow slideInDown" data-wow-duration="2s">
+                        <div class="bt-menu-head is-inline-block">
+                            <i class="is-paddingless ion-ios-body">
+                        </i>
+                        </div>
+                    </a>
                 </div>
+
             </div>
         </div>
-        <div class="container has-text-centered wow pulse" data-wow-iteration="15">
-            <a href="#section-two"> <i class="ion-ios-arrow-dropdown-outline" style="font-size: 3rem;color: white"></i> </a>
-        </div>
+        <a href="#section-two">
+            <div class="container has-text-centered animated infinite pulse" data-wow-iteration="15">
+                <i class="ion-ios-arrow-dropdown-outline has-text-centered down-next"></i>
+            </div>
+        </a>
     </section>
     <section class="hero is-fullheight" id="section-two">
         <div class="has-text-centered is-hidden-touch">
@@ -104,7 +125,10 @@
         <div class="hero-body">
             <div class="container">
                 <div class="has-text-centered">
-                    <div class="is-inline-block wow tada" data-wow-duration="3s" data-wow-iteration="3"><i class="ion-ios-bulb" style="font-size: 20vmin;color: #fff;padding-right: 0.2em"></i></div>
+                    <div class="is-inline-block wow tada" data-wow-duration="3s" data-wow-iteration="3">
+                        <i class="ion-ios-bulb" style="font-size: 20vmin;color: #fff;padding-right: 0.2em">
+                    </i>
+                    </div>
                     <div class="is-inline-block ">
                         <div class="title has-text-white is-size-2-touch is-size-1-desktop" style="padding-bottom: 0.1em"> My Activities </div>
                         <div class="subtitle has-text-white"> แรงบันดาลใจสร้างประสบการณ์ </div>
@@ -157,16 +181,21 @@
     <!-- scroll Up-->
     <div class="aligner is-hidden-mobile">
         <div id="menu-item">
-            <div class="bt-menu is-inline-block">
-                <a id="link-two" href="#section-two">
-                    <i class="is-paddingless ion-ios-briefcase" style="color: #fff"></i></a>
-            </div>
-            <div class="bt-menu is-inline-block" style="background-color: #F25757">
-                <a id="link-three" href="#section-three "> <i class="is-paddingless ion-ios-bulb"></i></a>
-            </div>
-            <div class="bt-menu is-inline-block" style="background-color: #FFCA3A">
-                <a id="link-four" href="#section-four"> <i class="is-paddingless ion-ios-body"></i></a>
-            </div>
+            <a id="link-two" href="#section-two">
+                <div class="bt-menu is-inline-block">
+                    <i class="is-paddingless ion-ios-briefcase" style="color: #fff"></i>
+                </div>
+            </a>
+            <a id="link-three" href="#section-three ">
+                <div class="bt-menu is-inline-block" style="background-color: #F25757">
+                    <i class="is-paddingless ion-ios-bulb"></i>
+                </div>
+            </a>
+            <a id="link-four" href="#section-four">
+                <div class="bt-menu is-inline-block" style="background-color: #FFCA3A">
+                    <i class="is-paddingless ion-ios-body"></i>
+                </div>
+            </a>
         </div>
     </div>
 
@@ -188,6 +217,7 @@
                 "default-state": {
                     gradients: [
                         ['#485563', '#29323c', '#29323c'],
+                        ['#C3F3FF', '#00A8D4', '#29323c'],
                         ['#00c6ff', '#0072ff', '#0072ff'],
                         ['#FFB856', '#FFB874', '#B7A99A']
                     ],

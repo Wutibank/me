@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="{{ asset('storage/image/page2.jpg') }}" />
     <meta name="theme-color" content="@yield('color')">
-      <!-- CSRF Token -->
-      <meta name="csrf-token" content="{{ csrf_token() }}">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title')</title>
-   
+
     <link rel="image_src" href="{{ asset('storage/image/page2.jpg') }}" />
     <link rel="icon" href="{{ asset('storage/storage/image/favicon.png') }}" type="image/x-icon" />
 
     <!-- Styles -->
-    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
     <link rel="stylesheet" href="{{ asset('css/main.min.css') }}">
@@ -31,22 +31,33 @@
             margin: 0;
             background-color: #495867;
         }
-         ul.a {
+        
+        ul.a {
             padding-left: 20px;
             list-style-type: square;
             list-style: square;
         }
+
     </style>
 
 </head>
 
 <body>
-   
-    @yield('body') 
+
+    @yield('body')
 
     <!-- scroll Up-->
+    <div class="aligner">
+        <div id="menu-item-project" style="top: 50px;">
+            <a href="@yield('link')">
+                <div class="bt-menu" style="background-color: @yield('color')">
+                    <i class="is-paddingless ion-md-arrow-round-back"></i>
+                </div>
+            </a>
+        </div>
+    </div>
 
-    <a href="#top" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em;color: #555"></i></a>
+    <a href="#top" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em;color: @yield('color')"></i></a>
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -61,7 +72,8 @@
     <script src="{{ asset('dist/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
     <script src="{{ asset('js/script.min.js') }}"></script>
     <script>
-     new WOW().init();
+        new WOW().init();
+
     </script>
 </body>
 

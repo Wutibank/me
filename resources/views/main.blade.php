@@ -44,10 +44,11 @@
     <!-- scroll Up-->
     <div class="aligner">
         <div id="menu-item-project">
-            <div class="bt-menu" style="background-color: @yield('color')">
-                <a id="link-two" href="{{url('/')}}">
-                    <i class="is-paddingless ion-ios-home"></i></a>
-            </div>
+            <a id="link-two" href="{{url('/')}}">
+                <div class="bt-menu" style="background-color: @yield('color')">
+                    <i class="is-paddingless ion-ios-home"></i>
+                </div>
+            </a>
         </div>
     </div>
     <a href="#section-one" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em;color: @yield('color')"></i></a>
