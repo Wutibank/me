@@ -29,14 +29,28 @@
     <style>
         body {
             /*background-color: #495867;*/
-            background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+            /*            background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);*/
+        }
+        
+        #canvas-bg {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: url("{{asset('storage/image/bg.jpeg')}}");
+            background-position-x: 50%;
+            background-size: cover;
         }
 
     </style>
 </head>
 
 <body>
-    <div class="pageloader"></div>
+    <canvas id="canvas-bg"></canvas>
     <section class="hero is-fullheight" id="section-one">
         <div class="hero-body">
             <div class="container has-text-centered main-title">
@@ -153,44 +167,65 @@
             <div class="bt-menu is-inline-block" style="background-color: #FFCA3A">
                 <a id="link-four" href="#section-four"> <i class="is-paddingless ion-ios-body"></i></a>
             </div>
-        </div> <a href="#section-one" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em"></i></a>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="{{ asset('dist/owlcarousel/owl.carousel.min.js') }}"></script>
-        <script src="{{ asset('dist/wow/wow.min.js') }}"></script>
-        <script src="{{ asset('js/script.min.js') }}"></script>
-        <script>
-            new WOW().init();
+        </div>
+    </div>
 
-            $(document).ready(function() {
-                $(".owl-carousel").owlCarousel();
-            });
 
-            var owl = $('.owl-carousel');
-            owl.owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: false,
-                autoplay: true,
-                autoplayTimeout: 1500,
-                autoplayHoverPause: true,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: false
-                    },
-                    769: {
-                        items: 2,
-                        nav: false
-                    },
-                    1008: {
-                        items: 4,
-                        loop: true,
-                    }
+    <a href="#section-one" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em"></i></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{{ asset('dist/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('dist/wow/wow.min.js') }}"></script>
+    <script src="{{ asset('js/script.min.js') }}"></script>
+    <script src="{{ asset('dist/granim/granim.min.js') }}"></script>
+    <script>
+        new WOW().init();
+        var granimInstance = new Granim({
+            element: '#canvas-bg',
+            direction: 'top-bottom',
+            opacity: [1, .5, 0],
+            isPausedWhenNotInView: true,
+            states: {
+                "default-state": {
+                    gradients: [
+                        ['#485563', '#29323c', '#29323c'],
+                        ['#00c6ff', '#0072ff', '#0072ff'],
+                        ['#FFB856', '#FFB874', '#B7A99A']
+                    ],
+                    transitionSpeed: 10000
                 }
-            });
+            }
+        });
 
-        </script>
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel();
+        });
+
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 1500,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                769: {
+                    items: 2,
+                    nav: false
+                },
+                1008: {
+                    items: 4,
+                    loop: true,
+                }
+            }
+        });
+
+    </script>
 </body>
 
 </html>
