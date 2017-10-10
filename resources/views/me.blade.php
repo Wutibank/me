@@ -157,7 +157,6 @@ CURRICULUM VITAE (CV)</span>
                 </div>
             </div>
         </div>
-
     </section>
 
     <div class="parallax-cover wow fadeIn" style="background-image: url('{{ asset('storage/image/connect.jpg') }}');"></div>

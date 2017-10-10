@@ -45,7 +45,6 @@
             background-position: center;
             background-size: cover;
         }
-
     </style>
 </head>
 
@@ -109,7 +108,7 @@
             @foreach ($item_pro->shuffle() as $itp)
             <div class="item item-pro">
                 <a href="{{url('project')}}/{{$itp->id}}">
-                    <img alt="" src="{{asset('storage/image/project')}}/{{$itp->cover_thumb}}" title="{{$itp->title}}"></a>
+                    <img alt="{{$itp->title}}" src="{{asset('storage/image/project')}}/{{$itp->cover_thumb}}" title="{{$itp->title}}"></a>
             </div>
             @endforeach
 
@@ -141,7 +140,7 @@
             @foreach ($item_act->shuffle() as $ita)
             <div class="item item-pro">
                 <a href="{{url('activity')}}/{{$ita->id}}">
-                    <img alt="" src="{{asset('storage/image/activities')}}/{{$ita->cover_thumb}}" title="{{$ita->title}}"></a>
+                    <img alt="{{$ita->title}}" src="{{asset('storage/image/activities')}}/{{$ita->cover_thumb}}" title="{{$ita->title}}"></a>
             </div>
             @endforeach
         </div>
@@ -180,7 +179,9 @@
         </div>
     </section>
     <!-- scroll Up-->
+
     <div class="aligner is-hidden-mobile">
+  
         <div id="menu-item">
             <a id="link-two" href="#section-two">
                 <div class="bt-menu is-inline-block">
@@ -200,8 +201,12 @@
         </div>
     </div>
 
-
+          <div class="is-inline-block switch-mobile" id="switch-gray">
+            <input type="checkbox" id="switch1" class="switch">
+            <label for="switch1">&nbsp;</label>
+            </div>
     <a href="#section-one" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em"></i></a>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="{{ asset('dist/owlcarousel/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('dist/wow/wow.min.js') }}"></script>
@@ -255,7 +260,6 @@
                 }
             }
         });
-
     </script>
 </body>
 

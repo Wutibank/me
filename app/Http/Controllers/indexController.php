@@ -18,8 +18,8 @@ class indexController extends Controller
     public function index()
     {
         //
-        $item_pro = DB::table('projects')->select('id', 'title', 'cover', 'cover_thumb')->inRandomOrder()->take(8)->get();
-        $item_act = DB::table('activities')->select('id', 'title', 'cover', 'cover_thumb')->inRandomOrder()->take(8)->get();
+        $item_pro = DB::table('projects')->select('id', 'title', 'cover', 'cover_thumb')->inRandomOrder()->take(6)->get();
+        $item_act = DB::table('activities')->select('id', 'title', 'cover', 'cover_thumb')->inRandomOrder()->take(6)->get();
         return view('index',compact('item_pro','item_act'));
     }
 

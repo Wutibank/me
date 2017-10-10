@@ -5,11 +5,13 @@ $(window).scroll(function () {
         $('#menu-item').fadeIn(200); // Fade in the arrow
         $('#menu-item-project').fadeIn(200);
         $('#text-head').fadeIn(200);
+        
     } else {
         $('#return-to-top').fadeOut(200); // Else fade out the arrow
         $('#menu-item').fadeOut(200); // Else fade out the arrow
         $('#menu-item-project').fadeOut(200);
         $('#text-head').fadeOut(200);
+  
     }
 });
 $('#return-to-top').click(function () { // When arrow is clicked
@@ -81,4 +83,12 @@ $(document).ready(function () {
         }
     });
 
+});
+
+
+
+$(document).ready(function(){
+    $("#switch1").click(function(){
+        $("body").toggleClass("graycolor");
+    });
 });
