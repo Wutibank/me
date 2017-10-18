@@ -56,7 +56,10 @@
             </a>
         </div>
     </div>
-
+ <div class="is-inline-block switch-mobile" id="switch-gray">
+            <input type="checkbox" id="switch1" class="switch">
+            <label for="switch1">&nbsp;</label>
+            </div>
     <a href="#top" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em;color: @yield('color')"></i></a>
 
     <!-- The Modal -->

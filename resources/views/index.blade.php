@@ -208,10 +208,12 @@
     <a href="#section-one" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em"></i></a>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="{{ asset('dist/owlcarousel/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('dist/wow/wow.min.js') }}"></script>
     <script src="{{ asset('js/script.min.js') }}"></script>
     <script src="{{ asset('dist/granim/granim.min.js') }}"></script>
+    
     <script>
         new WOW().init();
         var granimInstance = new Granim({

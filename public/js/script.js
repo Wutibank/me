@@ -87,8 +87,21 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function(){
-    $("#switch1").click(function(){
-        $("body").toggleClass("graycolor");
+//$(document).ready(function(){
+//    $("#switch1").click(function(){
+//        $("body").toggleClass("graycolor");
+//    });
+//});
+
+$(document).ready(function () {
+    var sel = $.cookie("graycolor"); // get the cookie
+    sel = sel == "true"; // convert to boolean - null is false, "false" is false
+    $("body").toggleClass("graycolor", sel); // initial
+    console.log("after test:"+sel,$("body").hasClass("graycolor"));
+    $("#switch1").on("click",function() {
+        var $this = $(this);
+        sel = !sel; // toggle
+        $("body").toggleClass("graycolor", sel);
+        $.cookie("graycolor", sel,{ expires: 7, path: '/' });
     });
 });
