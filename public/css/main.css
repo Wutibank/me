@@ -1,8 +1,5 @@
 body {
     font-family: Prompt;
-    -webkit-filter: grayscale(60%); /* Chrome, Safari, Opera */
-    filter: grayscale(60%);
-   
 }
 
 .graycolor{
