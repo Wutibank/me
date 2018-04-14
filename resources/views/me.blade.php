@@ -72,7 +72,7 @@
                 <div class="">
                     <p class="is-size-3-desktop is-size-4-touch has-text-centered wow fadeIn">For now, it’s just me. Wutthichai Panyasung.</p>
                     <br>
-                    <p class="is-size-5-desktop wow fadeIn">I am a student in the third year of a King Mongkut's University of Technology Thonburi (KMUTT), In the Field of study Applied Computer Science - Multimedia. I am studying many topics. For example - Graphic design, Programming, Video production and so on, About computer and information technology. Hobby, I like to do surfing the internet, writing articles or poems of memoir on some day.</p>
+                    <p class="is-size-5-desktop wow fadeIn">I am a student in the 4th year of a King Mongkut's University of Technology Thonburi (KMUTT), In the Field of study Applied Computer Science - Multimedia. I am studying many topics. For example - Graphic design, Programming, Video production and so on, About computer and information technology. Hobby, I like to do surfing the internet, writing articles or poems of memoir on some day.</p>
                     <br>
                     <p class="is-size-5-desktop wow fadeIn">
                         In addition, I am interested to follow and learn more about the trends of technology in today. And usually read articles about website development, Digital Media Design and IT news.</p>
@@ -106,13 +106,58 @@ CURRICULUM VITAE (CV)</span>
             </div>
         </div>
     </section>
-    <div class="parallax-cover wow fadeIn" style="background-image: url('{{ asset('storage/image/skills.jpg') }}');"></div>
+
+
+
+    <div class="parallax-cover wow fadeIn" style="background-image: url('{{ asset('storage/image/intern.jpg') }}');"></div>
     <section class="hero is-fullheight" id="section-melist" style="padding-bottom: 2em">
         <div class="container">
             <div style="padding: 0 6vmin">
                 <div class="has-text-centered head-me wow fadeIn">
 
                     <sup class="title is-5">No 2</sup>
+                    <p class="title is-1 is-uppercase" style="font-style: italic">INTERNSHIP</p>
+                    <p class="is-size-5-desktop is-size-6-touch">Programmer Intern, Horganice, June 2017 - July 2017</p>
+                </div>
+                <hr>
+                <div class="">
+                    <div class="columns">
+                        <div class="column wow fadeIn" style="padding-left: 5vmin">
+                        <p class="is-size-4-desktop is-size-6-touch has-text-centered wow fadeIn">Horganice, A communication medium between rental dormitory owners and tenants. Where I had learned how to create the business model canvas. I went to the dormitory area to explore the problem. Then think of solutions to solve those problems. This is an internship, which learned based on the project.</p>
+                            {{--  <p class="is-size-5-desktop has-text-weight-semibold has-text-centered pt-3">Ability</p>  --}}
+                            <div class="columns is-desktop pt-3">
+  <div class="column">
+    <img src="{{ asset('storage/image/activities/horganice/h01.jpg') }}">
+  </div>
+  <div class="column">
+    <img src="{{ asset('storage/image/activities/horganice/h02.jpg') }}">
+  </div>
+  <div class="column">
+    <img src="{{ asset('storage/image/activities/horganice/h03.jpg') }}">
+  </div>
+  <div class="column">
+    <img src="{{ asset('storage/image/activities/horganice/h04.jpg') }}">
+  </div>
+</div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="parallax-cover wow fadeIn" style="background-image: url('{{ asset('storage/image/skills.jpg') }}');"></div>
+    <section class="hero is-fullheight" id="section-melist" style="padding-bottom: 2em">
+        <div class="container">
+            <div style="padding: 0 6vmin">
+                <div class="has-text-centered head-me wow fadeIn">
+
+                    <sup class="title is-5">No 3</sup>
                     <p class="title is-1 is-uppercase" style="font-style: italic">SKILLS</p>
                     <p class="is-size-5-desktop is-size-6-touch">My skills may not the best, But I am still improve my skills and learning new things in every time.</p>
                 </div>
@@ -123,7 +168,7 @@ CURRICULUM VITAE (CV)</span>
                             <p class="title is-3 has-text-centered">Hard Skills</p>
 
                             <p class="is-size-5-desktop has-text-weight-semibold pb-1">Ability</p>
-                            <p class="is-size-6-desktop has-text-weight-light pl-3">Frond-End Development<br>Back-End Development (Learning...)<br>UX/UI Design<br>Graphic Design<br>Poetry Writing</p>
+                            <p class="is-size-6-desktop has-text-weight-light pl-3">Frond-End Development<br>Back-End Development (Learning...)<br> Laravel <br>Vue.js<br>UX/UI Design<br>Graphic Design<br>Poetry Writing</p>
 
                             <p class="is-size-5-desktop has-text-weight-semibold pt-3">Programming language</p>
                             <p class="is-size-6-desktop has-text-weight-light pl-3"> HTML &amp; CSS<br> Javascript
@@ -165,7 +210,7 @@ CURRICULUM VITAE (CV)</span>
             <div style="padding: 0 6vmin">
                 <div class="has-text-centered head-me  wow fadeIn">
 
-                    <sup class="title is-5">No 3</sup>
+                    <sup class="title is-5">No 4</sup>
                     <p class="title is-1 is-uppercase" style="font-style: italic">CONNECT</p>
                     <p class="is-size-5-desktop is-size-6-touch">Connect me in the world.</p>
                 </div>
@@ -173,9 +218,9 @@ CURRICULUM VITAE (CV)</span>
 
                 <div class="connect has-text-centered  wow fadeIn">
                     <div class="connect-border is-inline-block">
-                        <a href="mailto:wutihot@hotmail.com">
+                        <a href="mailto:wutthichai.bank@mail.kmutt.ac.th">
                             <span class="is-size-5"> <i class="icon ion-md-mail"></i>
-p.wutthichai@outlook.com</span>
+wutthichai.bank@mail.kmutt.ac.th</span>
                         </a>
                     </div>
                     <div class="connect-border is-inline-block">
@@ -232,10 +277,10 @@ Github</span>
             </a>
         </div>
     </div>
-     <div class="is-inline-block switch-mobile" id="switch-gray">
+     {{--  <div class="is-inline-block switch-mobile" id="switch-gray">
             <input type="checkbox" id="switch1" class="switch">
             <label for="switch1">&nbsp;</label>
-            </div>
+            </div>  --}}
     <a href="#section-one" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em;color: #FFCA3A"></i></a>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -95,7 +95,7 @@
             <div class="container">
                 <div class="has-text-centered">
                     <div class="is-inline-block wow flash" data-wow-duration="3s" data-wow-iteration="3">
-                        <i class="ion-md-desktop" style="font-size: 20vmin;color: #fff;padding-right: 0.2em"></i></div>
+                        <i class="ion-md-desktop" style="font-size: 15vmin;color: #fff;padding-right: 0.2em"></i></div>
                     <div class="is-inline-block ">
                         <div class="title has-text-white is-size-2-touch is-size-1-desktop" style="padding-bottom: 0.1em">MY PROJECTS</div>
                         <div class="subtitle has-text-white"> ค้นความรู้ด้วยลงมือทำ </div>
@@ -117,6 +117,7 @@
             <a href="#section-three"> <i class="ion-ios-arrow-dropdown-outline" style="font-size: 3rem;color: white"></i> </a>
         </div>
     </section>
+
     <section class="hero is-fullheight" id="section-three">
         <div class="has-text-centered is-hidden-touch">
             <a href="#section-two"> <i class="ion-ios-arrow-dropup-outline" style="font-size: 3rem;color: white"></i> </a>
@@ -125,10 +126,10 @@
             <div class="container">
                 <div class="has-text-centered">
                     <div class="is-inline-block wow tada" data-wow-duration="3s" data-wow-iteration="3">
-                        <i class="ion-md-bulb" style="font-size: 20vmin;color: #fff;padding-right: 0.2em">
+                        <i class="ion-md-bulb" style="font-size: 15vmin;color: #fff;padding-right: 0.2em">
                     </i>
                     </div>
-                    <div class="is-inline-block ">
+                    <div class="is-inline-block">
                         <div class="title has-text-white is-size-2-touch is-size-1-desktop" style="padding-bottom: 0.1em">MY ACTIVITIES</div>
                         <div class="subtitle has-text-white"> สรรประสบการณ์สร้างแรงบันดาลใจ </div>
                     </div>
@@ -200,11 +201,11 @@
             </a>
         </div>
     </div>
-
+{{--  
           <div class="is-inline-block switch-mobile" id="switch-gray">
             <input type="checkbox" id="switch1" class="switch">
             <label for="switch1">&nbsp;</label>
-            </div>
+        </div>  --}}
     <a href="#section-one" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em"></i></a>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

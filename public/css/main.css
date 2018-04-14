@@ -1,8 +1,9 @@
 body {
     font-family: Prompt;
-    -webkit-filter: grayscale(60%); /* Chrome, Safari, Opera */
-    filter: grayscale(60%);
+    /* -webkit-filter: grayscale(60%); 
+    filter: grayscale(60%); */
    
+    
 }
 
 .graycolor{
@@ -447,6 +448,12 @@ input.switch:checked ~ label:after {
     padding-bottom: 1em;
 }
 
+.pt-1 {
+    padding-top: 0.5em;
+}
+.pt-2 {
+    padding-top: 0.75em;
+}
 .pt-3 {
     padding-top: 1em;
 }
