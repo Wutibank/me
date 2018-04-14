@@ -13,3 +13,12 @@ let mix = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');
+
+mix.copy('resources/assets/css/main.css', 'public/css/main.css');
+
+mix.styles([
+    'resources/assets/css/animate.css',
+    'resources/assets/css/hoverbuttons.css'
+], 'public/css/other.css');
+
+

@@ -16,15 +16,14 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
-    <link rel="stylesheet" href="{{ asset('css/main.min.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/hoverbuttons.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/other.css') }}">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@3.0.0/dist/css/ionicons.min.css">
     <link rel="stylesheet" href="{{ asset('dist/owlcarousel/assets/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('dist/owlcarousel/assets/owl.theme.default.min.css') }}">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <link rel="stylesheet" href="{{ asset('dist/magnific-popup/magnific-popup.css') }}">
     <style>
         body {
