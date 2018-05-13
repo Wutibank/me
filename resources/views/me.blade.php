@@ -224,13 +224,13 @@ wutthichai.bank@mail.kmutt.ac.th</span>
                     </div>
                     <div class="connect-border is-inline-block">
                         <a href="https://www.fb.com/wutibank">
-                            <span class="is-size-5"> <i class="icon ion-logo-facebook"></i>
+                            <span class="is-size-5"> <i class="fab fa-facebook-square"></i>
 Facebook</span>
                         </a>
                     </div>
                     <div class="connect-border is-inline-block">
                         <a href="https://www.twitter.com/wutibank">
-                            <span class="is-size-5"> <i class="fa fa-twitter-square"></i>
+                            <span class="is-size-5"> <i class="fab fa-twitter-square"></i>
 Twitter</span>
                         </a>
                     </div>
@@ -239,14 +239,14 @@ Twitter</span>
 
                     <div class="connect-border is-inline-block">
                         <a href="https://www.instagram.com/wutibank">
-                            <span class="is-size-5"> <i class="fa fa-instagram"></i>
+                            <span class="is-size-5"> <i class="fab fa-instagram"></i>
 Instagram</span>
                         </a>
                     </div>
 
                     <div class="connect-border is-inline-block">
                         <a href="https://www.github.com/wutibank">
-                            <span class="is-size-5"> <i class="fa fa-github-square"></i>
+                            <span class="is-size-5"> <i class="fab fa-github-square"></i>
 Github</span>
                         </a>
                     </div>

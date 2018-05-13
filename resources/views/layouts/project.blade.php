@@ -21,7 +21,7 @@
         <div class="columns is-multiline is-centered tileAmimate">
                 @foreach ($pj->shuffle() as $pro)
             <div class="example-1 column is-12-mobile is-6-tablet is-4-desktop card-item">
-                <div class="wrapper" style="background: url({{asset('storage/image/project')}}/{{$pro->cover}}) 20% 1%/cover no-repeat;background-color:#222">
+                <div class="wrapper" style="background: url({{asset('storage/image/project')}}/{{$pro->cover_thumb}}) 20% 25%/contain no-repeat;background-color:#222">
                     <div class="date" style="background-color: #22AAA1;">
                         <span class="day">{{ Carbon\Carbon::parse($pro->created_at)->format('d')}}</span>
                         <span class="month">{{ Carbon\Carbon::parse($pro->created_at)->format('M')}}</span>

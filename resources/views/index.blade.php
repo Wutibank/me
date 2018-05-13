@@ -54,24 +54,24 @@
         <div class="hero-body">
             <div class="container has-text-centered main-title">
                 <p class="title is-size-2-mobile has-text-white hbtn hb-border-bottom-br4 wow zoomIn" data-wow-duration="2s" style="padding: 10px 18px;margin-left: 0px;">WUTIBANK</p>
-                <p class="subtitle has-text-white wow slideInDown" style="padding-top:15px;"> Now, It's Me </p>
+                <p id="text-me" class="subtitle has-text-white wow slideInDown" style="padding-top:15px;"> Now, It's Me </p>
 
                 <div>
-                    <a href="#section-two" class="wow slideInDown" data-wow-duration="2s">
+                    <a id="sec-two" href="#section-two" class="wow slideInDown" data-wow-duration="2s">
                         <div class="bt-menu-head is-inline-block">
                             <i class="is-paddingless ion-md-desktop">
                         </i>
                         </div>
                     </a>
 
-                    <a href="#section-three" class="wow slideInDown" data-wow-duration="2s">
+                    <a id="sec-three" href="#section-three" class="wow slideInDown" data-wow-duration="2s">
                         <div class="bt-menu-head is-inline-block">
                             <i class="is-paddingless ion-md-bulb">
                         </i>
                         </div>
                     </a>
 
-                    <a href="#section-four" class="wow slideInDown" data-wow-duration="2s">
+                    <a id="sec-four" href="#section-four" class="wow slideInDown" data-wow-duration="2s">
                         <div class="bt-menu-head is-inline-block">
                             <i class="is-paddingless ion-md-person">
                         </i>
@@ -263,6 +263,57 @@
                     loop: true,
                 }
             }
+        });
+
+        // $('#sec-two').hover(
+        //     function() {
+        //     var $this = $('#text-me'); // caching $(this)
+        //     $this.data('initialText', $this.text());
+        //     $this.text("I'm replaced!");
+        // },
+          
+        // );
+
+        $(function(){
+            $("#sec-two").hover(function(){
+                var $this = $('#text-me'); // caching $(this)
+                $this.data('initialText', $this.text());
+                $this.text("My Projects");
+            },
+             function(){
+                // change to any color that was previously used.
+                var $this = $('#text-me'); // caching $(this)
+                $this.data('initialText', $this.text());
+                 $this.text("Now, It's Me");
+            });
+        });
+
+        $(function(){
+            $("#sec-three").hover(function(){
+                var $this = $('#text-me'); // caching $(this)
+                $this.data('initialText', $this.text());
+                $this.text("My Activities");
+            },
+             function(){
+                // change to any color that was previously used.
+                var $this = $('#text-me'); // caching $(this)
+                $this.data('initialText', $this.text());
+                 $this.text("Now, It's Me");
+            });
+        });
+
+        $(function(){
+            $("#sec-four").hover(function(){
+                var $this = $('#text-me'); // caching $(this)
+                $this.data('initialText', $this.text());
+                $this.text("About Me");
+            }, 
+             function(){
+                // change to any color that was previously used.
+                var $this = $('#text-me'); // caching $(this)
+                $this.data('initialText', $this.text());
+                 $this.text("Now, It's Me");
+            });
         });
     </script>
 </body>
