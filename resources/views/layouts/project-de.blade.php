@@ -30,7 +30,7 @@
 
 <section class="is-fullheight">
 <div class="columns is-multiline" style="margin-right:0;">
-    <div id="section-image-project" class="column has-text-centered is-12-desktop is-4-widescreen">
+    <div id="section-image-project" class="column has-text-centered is-12-tablet is-12-desktop is-4-widescreen">
         @if (empty($pj->video))
         <a class="image-popup-no-margins" href="{{asset('storage/image/project')}}/{{ $pj->cover }}">
             <figure class=""><img src="{{asset('storage/image/project')}}/{{ $pj->cover_thumb }}" class="">
@@ -44,7 +44,7 @@
     </div>
 
     @php $number = 1; @endphp
-    <div class="column" id="section-projectlist" >
+    <div class="column" id="section-projectlist-detail">
         @if (!empty($pj->about_head))
         <div class="columns wow fadeInDown">
             <div class="column is-3">
@@ -118,7 +118,7 @@
             <div class="column wow fadeIn" data-wow-duration="3s">
                 <div class="columns is-multiline has-text-centered">
                     @foreach ($im as $image)
-                    <div class="column is-2">
+                    <div class="column is-mobile">
                         <div class="item">
                             <a class="image-popup-no-margins" href="{{asset('storage/image/project')}}/{{ $image }}">
                                 <img alt="" src="{{asset('storage/image/project')}}/{{ $image }}" class="">
@@ -133,6 +133,7 @@
         @endif
     </div>
   </div>
+  
 </section>
 
 <section style="background-color: #22aaa1;height: 50px">

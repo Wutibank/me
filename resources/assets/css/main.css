@@ -527,8 +527,15 @@ input.switch:checked~label:after {
 #section-projectlist {
     min-height: 100vh;
     background-color: #fff;
-    padding: 8em 2em 1em 2em;
+    padding: 8em 1em 1em 1em;
 }
+
+#section-projectlist-detail {
+    min-height: 100vh;
+    background-color: #fff;
+    padding: 8em 3em 1em 3em;
+}
+
 #section-projectlist .columns {
     margin-bottom: 2.5em;    
 }
@@ -547,12 +554,12 @@ input.switch:checked~label:after {
 
 #section-image-project {
     background-color: #EAFDFB;
-    padding: 5em 2em 1em 2em;
+    padding: 5em 2em 1em 3em;
 }
 
 #section-image-project img {
-    max-height: 30em;
-    min-width: 100%;
+    max-width: 20em;
+    min-width: 75%;
 }
 
 #menu-item-project {

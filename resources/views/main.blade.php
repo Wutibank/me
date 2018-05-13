@@ -12,7 +12,7 @@
     <title>@yield('title')</title>
 
     <link rel="image_src" href="{{ asset('storage/image/page2.jpg') }}" />
-    <link rel="icon" href="{{ asset('storage/storage/image/favicon.png') }}" type="image/x-icon" />
+    <link rel="icon" href="{{ asset('storage/image/favicon.png') }}" type="image/x-icon" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
