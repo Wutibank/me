@@ -12,7 +12,6 @@
                     {{ $pj->subtitle }}
                 </div>
             </div>
-
         </div>
     </div>
 </section>

@@ -17,7 +17,7 @@ class activityController extends Controller
     public function index()
     {
         //
-        $activities = DB::table('activities')->get();
+        $activities = DB::table('activities')->orderBy('created_at', 'asc')->get();
         return view('layouts.activity',['act'=>$activities]);
     }
 
