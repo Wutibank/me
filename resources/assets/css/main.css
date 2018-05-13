@@ -19,6 +19,17 @@ body {
     
 }
 
+/*---------- SECTION SCROLL -----------*/
+.section-two.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+}
+
+.state-menu {
+border: white 3px solid;
+}
+
+
 
 input.switch:empty {
   display: none ;
@@ -336,7 +347,7 @@ input.switch:checked ~ label:after {
     left: 20px;
     top: 20px;
     display: block;
-    display: none;
+   
 }
 
 #menu-item-project i {

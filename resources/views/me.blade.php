@@ -287,7 +287,7 @@ Github</span>
     <script src="{{ asset('dist/owlcarousel/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('dist/wow/wow.min.js') }}"></script>
     <script src="{{ asset('dist/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
-    <script src="{{ asset('js/script.min.js') }}"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
     <script>
         new WOW().init();
 

@@ -50,7 +50,7 @@
 
 <body>
     <canvas id="canvas-bg"></canvas>
-    <section class="hero is-fullheight" id="section-one">
+    <section class="hero is-fullheight section-one" id="section-one">
         <div class="hero-body">
             <div class="container has-text-centered main-title">
                 <p class="title is-size-2-mobile has-text-white hbtn hb-border-bottom-br4 wow zoomIn" data-wow-duration="2s" style="padding: 10px 18px;margin-left: 0px;">WUTIBANK</p>
@@ -87,8 +87,9 @@
             </div>
         </a>
     </section>
-    <section class="hero is-fullheight" id="section-two">
-        <div class="has-text-centered is-hidden-touch">
+    
+    <section class="hero is-fullheight section-two" id="section-two">
+        <div class="has-text-centered is-hidden-touch" id="section-two-pos">
             <a href="#section-one"> <i class="ion-ios-arrow-dropup-outline" style="font-size: 3rem;color: white"></i> </a>
         </div>
         <div class="hero-body">
@@ -118,9 +119,9 @@
         </div>
     </section>
 
-    <section class="hero is-fullheight" id="section-three">
-        <div class="has-text-centered is-hidden-touch">
-            <a href="#section-two"> <i class="ion-ios-arrow-dropup-outline" style="font-size: 3rem;color: white"></i> </a>
+    <section class="hero is-fullheight section-three" id="section-three">
+        <div class="has-text-centered is-hidden-touch" id="section-three-pos">
+            <a href="#section-two-pos"> <i class="ion-ios-arrow-dropup-outline" style="font-size: 3rem;color: white"></i> </a>
         </div>
         <div class="hero-body">
             <div class="container">
@@ -149,9 +150,9 @@
             <a href="#section-four"> <i class="ion-ios-arrow-dropdown-outline" style="font-size: 3rem;color: white"></i> </a>
         </div>
     </section>
-    <section class="hero is-fullheight" id="section-four">
-        <div class="has-text-centered is-hidden-touch">
-            <a href="#section-three"> <i class="ion-ios-arrow-dropup-outline" style="font-size: 3rem;color: white"></i> </a>
+    <section class="hero is-fullheight section-four" id="section-four">
+        <div class="has-text-centered is-hidden-touch" id="section-four-pos">
+            <a href="#section-three-pos"> <i class="ion-ios-arrow-dropup-outline" style="font-size: 3rem;color: white"></i> </a>
         </div>
         <div class="hero-body">
             <div class="container">
@@ -185,17 +186,17 @@
   
         <div id="menu-item">
             <a id="link-two" href="#section-two">
-                <div class="bt-menu is-inline-block">
+                <div class="bt-menu is-inline-block link-two">
                     <i class="is-paddingless ion-md-desktop" style="color: #fff"></i>
                 </div>
             </a>
             <a id="link-three" href="#section-three">
-                <div class="bt-menu is-inline-block" style="background-color: #F25757">
+                <div class="bt-menu is-inline-block link-three" style="background-color: #F25757">
                     <i class="is-paddingless ion-md-bulb"></i>
                 </div>
             </a>
             <a id="link-four" href="#section-four">
-                <div class="bt-menu is-inline-block" style="background-color: #FFCA3A">
+                <div class="bt-menu is-inline-block link-four" style="background-color: #FFCA3A">
                     <i class="is-paddingless ion-md-person"></i>
                 </div>
             </a>
@@ -212,7 +213,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="{{ asset('dist/owlcarousel/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('dist/wow/wow.min.js') }}"></script>
-    <script src="{{ asset('js/script.min.js') }}"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
     <script src="{{ asset('dist/granim/granim.min.js') }}"></script>
     
     <script>

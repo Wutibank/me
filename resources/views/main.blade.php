@@ -61,7 +61,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="{{ asset('dist/owlcarousel/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('dist/wow/wow.min.js') }}"></script>
-    <script src="{{ asset('js/script.min.js') }}"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
 
     <script>
         new WOW().init();
