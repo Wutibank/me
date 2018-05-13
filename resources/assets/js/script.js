@@ -3,12 +3,12 @@ $(window).scroll(function () {
     if ($(this).scrollTop() >= 200) { // If page is scrolled more than 50px
         $('#return-to-top').fadeIn(200); // Fade in the arrow
         $('#menu-item').fadeIn(200); // Fade in the arrow
-        // $('#menu-item-project').fadeIn(200);
+        $('#menu-item-project').fadeIn(200);
         $('#text-head').fadeIn(200);
     } else {
         $('#return-to-top').fadeOut(200); // Else fade out the arrow
         $('#menu-item').fadeOut(200); // Else fade out the arrow
-        // $('#menu-item-project').fadeOut(200);
+        $('#menu-item-project').fadeOut(200);
         $('#text-head').fadeOut(200);
     }
 });

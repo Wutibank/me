@@ -397,6 +397,7 @@ input.switch:checked~label:after {
     #menu-item {
         display: none;
     }
+    
     /* label {
         width: 100% !important;
         text-align: center;
@@ -556,7 +557,7 @@ input.switch:checked~label:after {
     position: fixed;
     left: 20px;
     top: 20px;
-    display: block;
+    display: none;
 }
 
 #menu-item-project i {
@@ -571,6 +572,17 @@ input.switch:checked~label:after {
     top: 0;
     width: 100%;
     transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 767px) {
+    /* #menu-item-project {
+        z-index: 1000;
+        position: fixed;
+        left: 20px;
+        bottom: 18px !important;
+        top: auto;
+        display: block;
+    } */
 }
 
 /*end-project*/
