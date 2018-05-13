@@ -502,7 +502,7 @@ input.switch:checked ~ label:after {
 /*project*/
 
 #section-projectlist {
-    min-height: 75vh;
+    min-height: 100vh;
     background-color: #EAFDFB;
 }
 

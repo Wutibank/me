@@ -89,7 +89,7 @@
         </div> --}}
     </div>
 </section>
-<div class="footer-project">
-</div>
+<footer class="footer-project">
+</footer>
 
 @endsection
