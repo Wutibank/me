@@ -15,7 +15,7 @@
     </div>
 </section>
 
-<section class="section  is-fullheight" id="section-projectlist">
+<section class="section is-fullheight" id="section-projectlist">
     <div class="container">
 
         <div class="columns is-multiline is-centered tileAmimate">

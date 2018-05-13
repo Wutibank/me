@@ -28,29 +28,23 @@
     </div>
 </section>
 
-
-<section class="section" id="section-image-project">
-    <div class="container">
-        <div class="has-text-centered wow fadeIn" data-wow-duration="2s">
-
-            @if (empty($pj->video))
-            <a class="image-popup-no-margins" href="{{asset('storage/image/project')}}/{{ $pj->cover }}">
-                <figure class=""><img src="{{asset('storage/image/project')}}/{{ $pj->cover_thumb }}">
-                </figure>
-            </a>
-            @else
-            <div class="videoFrame">
-                <iframe src="{{ $pj->video }}" frameborder="0" allowfullscreen></iframe>
-            </div>
-            @endif
-
+<section class="is-fullheight">
+<div class="columns is-multiline" style="margin-right:0;">
+    <div id="section-image-project" class="column has-text-centered is-12-desktop is-4-widescreen">
+        @if (empty($pj->video))
+        <a class="image-popup-no-margins" href="{{asset('storage/image/project')}}/{{ $pj->cover }}">
+            <figure class=""><img src="{{asset('storage/image/project')}}/{{ $pj->cover_thumb }}" class="">
+            </figure>
+        </a>
+        @else
+        <div class="videoFrame">
+            <iframe src="{{ $pj->video }}" frameborder="0" allowfullscreen></iframe>
         </div>
+        @endif
     </div>
-</section>
-@php $number = 1; @endphp
-<section class="section" id="section-projectlist">
-    <div class="container">
 
+    @php $number = 1; @endphp
+    <div class="column" id="section-projectlist" >
         @if (!empty($pj->about_head))
         <div class="columns wow fadeInDown">
             <div class="column is-3">
@@ -62,7 +56,8 @@
                 <h3>{!! $pj->about_detail !!}</h3>
             </div>
         </div>
-        @php $number++; @endphp @endif @if (!empty($ma[0]))
+        @php $number++; @endphp @endif 
+        @if (!empty($ma[0]))
         <div class="columns wow fadeInDown">
             <div class="column is-3">
                 <sup>No {{$number}}</sup>
@@ -115,18 +110,18 @@
             </div>
         </div>
         @php $number++; @endphp @endif @if (!empty($im[0]))
-        <div class="columns">
-            <div class="column is-3 wow fadeInDown">
+        <div class="columns" style="padding-top:5em;">
+            {{-- <div class="column is-3 wow fadeInDown">
                 <sup>No {{ $number }}</sup>
                 <span class="title is-5">MORE IMAGE</span>
-            </div>
+            </div> --}}
             <div class="column wow fadeIn" data-wow-duration="3s">
-                <div class="columns is-multiline">
+                <div class="columns is-multiline has-text-centered">
                     @foreach ($im as $image)
-                    <div class="column is-4 has-text-centered">
+                    <div class="column is-2">
                         <div class="item">
                             <a class="image-popup-no-margins" href="{{asset('storage/image/project')}}/{{ $image }}">
-                                <img alt="" src="{{asset('storage/image/project')}}/{{ $image }}">
+                                <img alt="" src="{{asset('storage/image/project')}}/{{ $image }}" class="">
                             </a>
                         </div>
                     </div>
@@ -137,7 +132,9 @@
         </div>
         @endif
     </div>
+  </div>
 </section>
+
 <section style="background-color: #22aaa1;height: 50px">
 </section>
 

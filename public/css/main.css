@@ -526,7 +526,8 @@ input.switch:checked~label:after {
 
 #section-projectlist {
     min-height: 100vh;
-    background-color: #EAFDFB;
+    background-color: #fff;
+    padding: 8em 2em 1em 2em;
 }
 #section-projectlist .columns {
     margin-bottom: 2.5em;    
@@ -545,11 +546,13 @@ input.switch:checked~label:after {
 }
 
 #section-image-project {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #EAFDFB;
+    padding: 5em 2em 1em 2em;
 }
 
 #section-image-project img {
     max-height: 30em;
+    min-width: 100%;
 }
 
 #menu-item-project {
