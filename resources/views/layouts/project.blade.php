@@ -17,7 +17,31 @@
 
 <section class="section  is-fullheight" id="section-projectlist">
     <div class="container">
-        <div class="columns is-multiline is-centered">
+
+        <div class="columns is-multiline is-centered tileAmimate">
+                @foreach ($pj->shuffle() as $pro)
+            <div class="example-1 column is-12-mobile is-6-tablet is-4-desktop card-item">
+                <div class="wrapper" style="background: url({{asset('storage/image/project')}}/{{$pro->cover}}) 20% 1%/cover no-repeat;background-color:#222">
+                    <div class="date">
+                        <span class="day">{{ Carbon\Carbon::parse($pro->created_at)->format('d')}}</span>
+                        <span class="month">{{ Carbon\Carbon::parse($pro->created_at)->format('M')}}</span>
+                        <span class="year">{{ Carbon\Carbon::parse($pro->created_at)->format('Y') + 543}}</span>
+                </div>
+                <div class="data">
+                    <div class="content">
+                        <span class="author">#{{ $pro->category }}</span>
+                        <h1 class="title is-size-5-mobile is-size-3-desktop"><a href="{{url('project/'.$pro->id) }}">{{ $pro->title }}</a></h1>
+                        <p class="text">{{ $pro->subtitle }}</p>
+                        <span></span>
+                    </div>
+                </div>
+                </div>
+            </div>
+            @endforeach
+
+        </div>
+
+        {{-- <div class="columns is-multiline is-centered">
             <input type="radio" id="reset" name="color">
             <label for="reset" class="project-bt">ALL PROJECT</label>
 
@@ -30,8 +54,13 @@
             <label for="design" class="project-bt">DESIGN &amp; 3D MODEL</label>
 
             <input type="radio" id="video" name="color">
-            <label for="video" class="project-bt">VIDEO PRODUCTION</label> @foreach ($pj->shuffle() as $pro)
+            <label for="video" class="project-bt">VIDEO PRODUCTION</label> 
+            
+
+
+            @foreach ($pj->shuffle() as $pro)
             <div class="column is-6-tablet is-4-desktop tileAmimate {{ $pro->category }}">
+                
                 <div class="card">
                     <div class="card-image item-pro wow fadeIn" data-wow-duration="3s">
                         <figure class="image">
@@ -57,7 +86,7 @@
             </div>
             @endforeach
 
-        </div>
+        </div> --}}
     </div>
 </section>
 <div class="footer-project">
