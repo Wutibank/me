@@ -40,7 +40,7 @@
                                     <div class="data">
                                         <div class="content">
                                             <span class="author">{{ $item->organizer }}</span>
-                                            <h1 class="title is-size-5-mobile is-size-3-desktop"><a href="{{url('activity/'.$item->id)}}">{{ $item->title }}</a></h1>
+                                            <h1 class="title is-size-5-mobile is-size-3-desktop"><a href="{{url('activity/'.$item->id)}}" style="color: #f25757;">{{ $item->title }}</a></h1>
                                             <p class="text">{{ $item->subtitle }}</p>
                                             <span></span>
                                         </div>

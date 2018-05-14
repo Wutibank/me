@@ -26,6 +26,7 @@ body {
 
 .state-menu {
     border: white 3px solid;
+    margin: 0em 0.75em;
 }
 
 /*---------- CARD-item ------------*/
@@ -626,7 +627,7 @@ input.switch:checked~label:after {
 
 #section-activitylist {
     min-height: 75vh;
-    background-color: #FFF6F5;
+    background-color: #fef9f0;
 }
 
 #section-activitylist .columns {

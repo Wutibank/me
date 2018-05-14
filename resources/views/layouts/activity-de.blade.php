@@ -35,7 +35,7 @@
         <div class="has-text-centered wow fadeIn" data-wow-duration="2s">
             <figure class="">
                 <a class="image-popup-no-margins" href="{{asset('storage/image/activities')}}/{{ $act->cover }}">
-                        <img src="{{asset('storage/image/activities')}}/{{ $act->cover_thumb }}">
+                        <img src="{{asset('storage/image/activities')}}/{{ $act->cover }}">
                     </a>
             </figure>
         </div>
@@ -115,15 +115,11 @@
 
         </div>
         @php $number++; @endphp @endif @if (!empty($im[0]))
-        <div class="columns">
-            <div class="column is-3 wow fadeIn">
-                <sup>No {{ $number }}</sup>
-                <span class="title is-5">MORE IMAGE</span>
-            </div>
+        <div class="columns" style="padding-top:5em;">
             <div class="column wow fadeIn" data-wow-duration="3s">
-                <div class="columns is-multiline">
+                <div class="columns is-multiline has-text-centered">
                     @foreach ($im as $image)
-                    <div class="column is-4">
+                    <div class="column is-mobile">
                         <div class="item">
                             <a class="image-popup-no-margins" href="{{asset('storage/image/activities')}}/{{ $image }}">
                                 <img alt="" src="{{asset('storage/image/activities')}}/{{ $image }}">

@@ -18,7 +18,7 @@
 <section class="section is-fullheight" id="section-projectlist">
     <div class="container">
         <div class="header-thumbnail">
-                <i class="fas fa-code"></i> WEBSITE / PROGRAMMING
+                <i class="fas fa-code"></i> WEBSITE / PROGRAM
         </div>
         <div class="columns is-multiline is-centered tileAmimate">
             @foreach ($pro_web as $pro)
@@ -32,7 +32,7 @@
                 <div class="data">
                     <div class="content">
                         <span class="author">#{{ $pro->category }}</span>
-                        <h1 class="title is-size-5-mobile is-size-3-desktop"><a href="{{url('project/'.$pro->id) }}">{{ $pro->title }}</a></h1>
+                        <h1 class="title is-size-5-mobile is-size-3-desktop"><a href="{{url('project/'.$pro->id) }}" style="color: #22AAA1;">{{ $pro->title }}</a></h1>
                         <p class="text">{{ $pro->subtitle }}</p>
                         <span></span>
                     </div>
@@ -55,7 +55,7 @@
                 <div class="data">
                     <div class="content">
                         <span class="author">#{{ $pro->category }}</span>
-                        <h1 class="title is-size-5-mobile is-size-3-desktop"><a href="{{url('project/'.$pro->id) }}">{{ $pro->title }}</a></h1>
+                        <h1 class="title is-size-5-mobile is-size-3-desktop"><a href="{{url('project/'.$pro->id) }}" style="color: #22AAA1;">{{ $pro->title }}</a></h1>
                         <p class="text">{{ $pro->subtitle }}</p>
                         <span></span>
                     </div>
@@ -78,7 +78,7 @@
                 <div class="data">
                     <div class="content">
                         <span class="author">#{{ $pro->category }}</span>
-                        <h1 class="title is-size-5-mobile is-size-3-desktop"><a href="{{url('project/'.$pro->id) }}">{{ $pro->title }}</a></h1>
+                        <h1 class="title is-size-5-mobile is-size-3-desktop"><a href="{{url('project/'.$pro->id) }}" style="color: #22AAA1;">{{ $pro->title }}</a></h1>
                         <p class="text">{{ $pro->subtitle }}</p>
                         <span></span>
                     </div>

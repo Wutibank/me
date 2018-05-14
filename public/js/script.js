@@ -198,7 +198,7 @@ $(document).ready(function () {
             $(".link-three").removeClass('state-menu');
         }
 
-        if (scroll_pos >= $("#section-four").position().top) {
+        if (scroll_pos >= $("#section-four").position().top - 5) {
             $(".link-four").addClass('state-menu');
         } else {
             $(".link-four").removeClass('state-menu');
