@@ -18,7 +18,7 @@ class projectController extends Controller
     public function index()
     {
         //
-        $projects = DB::table('projects')->get();
+        $projects = DB::table('projects')->where('category', '=','website')->orWhere('category', '=','program')->get();
         return view('layouts.project',['pj'=>$projects]);
     }
 
