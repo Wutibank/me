@@ -18,8 +18,11 @@ class projectController extends Controller
     public function index()
     {
         //
-        $projects = DB::table('projects')->where('category', '=','website')->orWhere('category', '=','program')->get();
-        return view('layouts.project',['pj'=>$projects]);
+        $pro_web = DB::table('projects')->where('category', '=','website')->orWhere('category', '=','program')->get();
+        $pro_design = DB::table('projects')->where('category', '=','design')->get();
+        $pro_video = DB::table('projects')->where('category', '=','video')->get();
+        
+        return view('layouts.project',compact('pro_web', 'pro_design', 'pro_video'));
     }
 
     /**

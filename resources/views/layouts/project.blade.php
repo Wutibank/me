@@ -17,9 +17,11 @@
 
 <section class="section is-fullheight" id="section-projectlist">
     <div class="container">
-            <p class="header-thumbnail">Website</p>
+        <div class="header-thumbnail">
+                <i class="fas fa-code"></i> WEBSITE / PROGRAMMING
+        </div>
         <div class="columns is-multiline is-centered tileAmimate">
-                @foreach ($pj as $pro)
+            @foreach ($pro_web as $pro)
             <div class="example-1 column is-12-mobile is-6-tablet is-4-desktop card-item wow fadeIn" data-wow-duration="3s">
                 <div class="wrapper" style="background: url({{asset('storage/image/project')}}/{{$pro->cover_thumb}}) 20% 25%/contain no-repeat;background-color:#fff;">
                     <div class="date" style="background-color: #22AAA1;">
@@ -38,7 +40,52 @@
                 </div>
             </div>
             @endforeach
+        </div>
 
+        <p class="header-thumbnail"><i class="fas fa-pencil-alt"></i> DESIGN / 3D MODEL</p>
+        <div class="columns is-multiline is-centered tileAmimate">
+            @foreach ($pro_design as $pro)
+            <div class="example-1 column is-12-mobile is-6-tablet is-4-desktop card-item wow fadeIn" data-wow-duration="3s">
+                <div class="wrapper" style="background: url({{asset('storage/image/project')}}/{{$pro->cover_thumb}}) 20% 25%/contain no-repeat;background-color:#fff;">
+                    <div class="date" style="background-color: #22AAA1;">
+                        <span class="day">{{ Carbon\Carbon::parse($pro->created_at)->format('d')}}</span>
+                        <span class="month">{{ Carbon\Carbon::parse($pro->created_at)->format('M')}}</span>
+                        <span class="year">{{ Carbon\Carbon::parse($pro->created_at)->format('Y') + 543}}</span>
+                </div>
+                <div class="data">
+                    <div class="content">
+                        <span class="author">#{{ $pro->category }}</span>
+                        <h1 class="title is-size-5-mobile is-size-3-desktop"><a href="{{url('project/'.$pro->id) }}">{{ $pro->title }}</a></h1>
+                        <p class="text">{{ $pro->subtitle }}</p>
+                        <span></span>
+                    </div>
+                </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+
+        <p class="header-thumbnail"><i class="fas fa-film"></i> VIDEO PRODUCTION</p>
+        <div class="columns is-multiline is-centered tileAmimate">
+            @foreach ($pro_video as $pro)
+            <div class="example-1 column is-12-mobile is-6-tablet is-4-desktop card-item wow fadeIn" data-wow-duration="3s">
+                <div class="wrapper" style="background: url({{asset('storage/image/project')}}/{{$pro->cover_thumb}}) 20% 25%/contain no-repeat;background-color:#fff;">
+                    <div class="date" style="background-color: #22AAA1;">
+                        <span class="day">{{ Carbon\Carbon::parse($pro->created_at)->format('d')}}</span>
+                        <span class="month">{{ Carbon\Carbon::parse($pro->created_at)->format('M')}}</span>
+                        <span class="year">{{ Carbon\Carbon::parse($pro->created_at)->format('Y') + 543}}</span>
+                </div>
+                <div class="data">
+                    <div class="content">
+                        <span class="author">#{{ $pro->category }}</span>
+                        <h1 class="title is-size-5-mobile is-size-3-desktop"><a href="{{url('project/'.$pro->id) }}">{{ $pro->title }}</a></h1>
+                        <p class="text">{{ $pro->subtitle }}</p>
+                        <span></span>
+                    </div>
+                </div>
+                </div>
+            </div>
+            @endforeach
         </div>
 
         {{-- <div class="columns is-multiline is-centered">
