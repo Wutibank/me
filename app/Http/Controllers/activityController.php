@@ -51,14 +51,10 @@ class activityController extends Controller
     public function show($id)
     {
         //
-        $activities = activity::find($id);
-        $skills = activity::find($id)->pluck('skills');
-        $more_image = activity::find($id)->pluck('more_image');
-        $skill = explode("&&",$skills[$id-1]);
-        $image = explode("&&",$more_image[$id-1]);
+        $activity = activity::find($id);
         
 
-        return view('layouts.activity-de',['act'=>$activities,'ski'=>$skill,'im'=>$image]);
+        return view('layouts.activity-de',compact('activity'));
     }
 
     /**
