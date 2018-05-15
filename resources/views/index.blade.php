@@ -306,7 +306,7 @@
             $("#sec-four").hover(function(){
                 var $this = $('#text-me'); // caching $(this)
                 $this.data('initialText', $this.text());
-                $this.text("About Me");
+                $this.text("My Story");
             }, 
              function(){
                 // change to any color that was previously used.
