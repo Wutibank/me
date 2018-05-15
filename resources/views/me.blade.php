@@ -43,10 +43,10 @@
                 <i class="ion-md-person" style="font-size: 20vmin;color: #fff;padding-right: 0.2em"></i>
 
                 <div class="is-inline-block ">
-                    <div class="title has-text-white is-size-2-touch is-size-1-desktop" style="padding-bottom: 0.2em">
+                    <div class="title has-text-white is-size-4-mobile is-size-1-desktop" style="padding-bottom: 0.2em">
                         MY STORY
                     </div>
-                    <div class="subtitle has-text-white">
+                    <div class="subtitle is-size-6-mobile is-size-2-desktop has-text-white">
                        บทเรียงร้อยการเดินทาง
                     </div>
                 </div>
@@ -71,9 +71,9 @@
                 <div class="">
                     <p class="is-size-3-desktop is-size-4-touch has-text-centered wow fadeIn">For now, it’s just me. Wutthichai Panyasung.</p>
                     <br>
-                    <p class="is-size-5-desktop wow fadeIn">I am a student in the 4th year of a King Mongkut's University of Technology Thonburi (KMUTT), In the Field of study Applied Computer Science - Multimedia. I am studying many topics. For example - Graphic design, Programming, Video production and so on, About computer and information technology. Hobby, I like to do surfing the internet, writing articles or poems of memoir on some day.</p>
+                    <p class="is-size-5-desktop me-text wow fadeIn">I am a student in the 4th year of a King Mongkut's University of Technology Thonburi (KMUTT), In the Field of study Applied Computer Science - Multimedia. I am studying many topics. For example - Graphic design, Programming, Video production and so on, About computer and information technology. Hobby, I like to do surfing the internet, writing articles or poems of memoir on some day.</p>
                     <br>
-                    <p class="is-size-5-desktop wow fadeIn">
+                    <p class="is-size-5-desktop me-text wow fadeIn">
                         In addition, I am interested to follow and learn more about the trends of technology in today. And usually read articles about website development, Digital Media Design and IT news.</p>
                 </div>
                 <br>
@@ -122,7 +122,7 @@ CURRICULUM VITAE (CV)</span>
                 <div class="">
                     <div class="columns">
                         <div class="column wow fadeIn" style="padding-left: 5vmin">
-                        <p class="is-size-4-desktop is-size-6-touch has-text-centered wow fadeIn">Horganice, A communication medium between rental dormitory owners and tenants. Where I had learned how to create the business model canvas. I went to the dormitory area to explore the problem. Then think of solutions to solve those problems. This is an internship, which learned based on the project.</p>
+                        <p class="is-size-5-desktop is-size-6-touch me-text wow fadeIn">Horganice, A communication medium between rental dormitory owners and tenants. Where I had learned how to create the business model canvas. I went to the dormitory area to explore the problem. Then think of solutions to solve those problems. This is an internship, which learned based on the project.</p>
                             {{--  <p class="is-size-5-desktop has-text-weight-semibold has-text-centered pt-3">Ability</p>  --}}
                             <div class="columns is-desktop pt-3">
   <div class="column">
@@ -212,16 +212,22 @@ CURRICULUM VITAE (CV)</span>
                     <sup class="title is-5">No 4</sup>
                     <p class="title is-1 is-uppercase" style="font-style: italic">CONNECT</p>
                     <p class="is-size-5-desktop is-size-6-touch">Connect me in the world.</p>
+                    <p class="is-size-5" style="padding-top:1.5em;">
+                        <a href="mailto:wutthichai.bank@mail.kmutt.ac.th" style="color:#4a4a4a;">
+                            <span> <i class="icon ion-md-mail"></i>
+                            wutthichai.bank@mail.kmutt.ac.th</span>
+                        </a>
+                    </p>
                 </div>
                 <hr>
 
                 <div class="connect has-text-centered  wow fadeIn">
-                    <div class="connect-border is-inline-block">
+                    {{-- <div class="connect-border is-inline-block">
                         <a href="mailto:wutthichai.bank@mail.kmutt.ac.th">
                             <span class="is-size-5"> <i class="icon ion-md-mail"></i>
 wutthichai.bank@mail.kmutt.ac.th</span>
                         </a>
-                    </div>
+                    </div> --}}
 
                     <div class="connect-border is-inline-block">
                         <a href="https://www.github.com/wutibank">

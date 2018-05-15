@@ -160,7 +160,7 @@
                     <div class="column">
                         <div class="has-text-centered">
                             <div class="is-inline-block wow flipInX" data-wow-duration="3s" data-wow-iteration="3">
-                                <i class="ion-md-person" style="font-size: 18vmin;color: #fff;padding-right: 0.2em"></i></div>
+                                <i class="ion-md-person" style="font-size: 18vmin;color: #fff;"></i></div>
                             <div class="is-block">
                                 <div class="title has-text-white is-size-2-touch is-size-1-desktop" style="padding-bottom: 0.2em"> My Story </div>
                                 <div class="subtitle has-text-white"> บทเรียงร้อยการเดินทาง </div>

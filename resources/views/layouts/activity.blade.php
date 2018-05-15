@@ -6,7 +6,7 @@
 
             <div class="is-inline-block ">
                 <div class="title has-text-white is-size-4-mobile is-size-1-desktop" style="padding-bottom: 0.1em"> MY ACTIVITIES </div>
-                <div class="subtitle is-size-6-mobile is-size-1-desktop has-text-white">
+                <div class="subtitle is-size-6-mobile is-size-2-desktop has-text-white">
                     สรรประสบการณ์สร้างแรงบันดาลใจ </div>
             </div>
         </div>

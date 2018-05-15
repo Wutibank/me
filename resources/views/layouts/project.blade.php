@@ -7,7 +7,7 @@
                 <div class="title has-text-white is-size-4-mobile is-size-1-desktop" style="padding-bottom: 0.2em">
                     MY PROJECTS
                 </div>
-                <div class="subtitle is-size-6-mobile is-size-1-desktop has-text-white">
+                <div class="subtitle is-size-6-mobile is-size-2-desktop has-text-white">
                     ค้นความรู้ด้วยลงมือทำ
                 </div>
             </div>

@@ -647,6 +647,10 @@ input.switch:checked~label:after {
 
 /*me*/
 
+.me-text{
+    text-align: justify;
+    text-justify: inter-word;
+}
 #section-melist {
     min-height: 75vh;
     background-color: #FEF9F0;
