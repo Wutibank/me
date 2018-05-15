@@ -222,6 +222,14 @@ CURRICULUM VITAE (CV)</span>
 wutthichai.bank@mail.kmutt.ac.th</span>
                         </a>
                     </div>
+
+                    <div class="connect-border is-inline-block">
+                        <a href="https://www.github.com/wutibank">
+                            <span class="is-size-5"> <i class="fab fa-github-square"></i>
+Github</span>
+                        </a>
+                    </div>
+                    
                     <div class="connect-border is-inline-block">
                         <a href="https://www.fb.com/wutibank">
                             <span class="is-size-5"> <i class="fab fa-facebook-square"></i>
@@ -244,12 +252,7 @@ Instagram</span>
                         </a>
                     </div>
 
-                    <div class="connect-border is-inline-block">
-                        <a href="https://www.github.com/wutibank">
-                            <span class="is-size-5"> <i class="fab fa-github-square"></i>
-Github</span>
-                        </a>
-                    </div>
+
                 </div>
                 <br>
                 <div class="has-text-centered  wow fadeIn" style="margin-bottom: 5vmin">
