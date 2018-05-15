@@ -67,19 +67,19 @@
 
         <p class="header-thumbnail"><i class="fas fa-film"></i> VIDEO PRODUCTION</p>
         <div class="columns is-multiline is-centered tileAmimate">
-            @foreach ($pro_video as $pro)
+            @foreach ($pro_video as $provi)
             <div class="example-1 column is-12-mobile is-6-tablet is-4-desktop card-item wow fadeIn" data-wow-duration="3s">
-                <div class="wrapper" style="background: url({{asset('storage/image/project')}}/{{$pro->cover_thumb}}) 20% 25%/contain no-repeat;background-color:#fff;">
+                <div class="wrapper" style="background: url({{asset('storage/image/project')}}/{{$provi->cover_thumb}}) 20% 25%/contain no-repeat;background-color:#fff;">
                     <div class="date" style="background-color: #22AAA1;">
-                        <span class="day">{{ Carbon\Carbon::parse($pro->created_at)->format('d')}}</span>
-                        <span class="month">{{ Carbon\Carbon::parse($pro->created_at)->format('M')}}</span>
-                        <span class="year">{{ Carbon\Carbon::parse($pro->created_at)->format('Y') + 543}}</span>
+                        <span class="day">{{ Carbon\Carbon::parse($provi->created_at)->format('d')}}</span>
+                        <span class="month">{{ Carbon\Carbon::parse($provi->created_at)->format('M')}}</span>
+                        <span class="year">{{ Carbon\Carbon::parse($provi->created_at)->format('Y') + 543}}</span>
                 </div>
                 <div class="data">
                     <div class="content">
-                        <span class="author">#{{ $pro->category }}</span>
-                        <h1 class="title is-size-5-mobile is-size-3-desktop"><a href="{{url('project/'.$pro->id) }}" style="color: #22AAA1;">{{ $pro->title }}</a></h1>
-                        <p class="text">{{ $pro->subtitle }}</p>
+                        <span class="author">#{{ $provi->category }}</span>
+                        <h1 class="title is-size-5-mobile is-size-3-desktop"><a href="{{url('project/'.$provi->id) }}" style="color: #22AAA1;">{{ $provi->title }}</a></h1>
+                        <p class="text">{{ $provi->subtitle }}</p>
                         <span></span>
                     </div>
                 </div>

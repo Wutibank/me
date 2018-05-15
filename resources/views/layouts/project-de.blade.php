@@ -1,4 +1,4 @@
-@extends('detail') @section('title') {{ $pj->title }} @endsection @section('color', '#22AAA1') @section('link') {{url('project')}} @endsection @section('body')
+@extends('detail') @section('title') {{ $project->title }} @endsection @section('color', '#22AAA1') @section('link') {{url('project')}} @endsection @section('body')
 <i id="top"></i>
 <section class="section" id="section-two">
     <div class="container">
@@ -6,10 +6,10 @@
         <div class="has-text-centered">
             <div class="is-inline-block ">
                 <div class="title has-text-white is-size-5-touch is-size-1-desktop" style="padding-bottom: 0.2em">
-                    {{ $pj->title }}
+                    {{ $project->title }}
                 </div>
                 <div class="subtitle has-text-white is-size-6-touch is-size-4-desktop">
-                    {{ $pj->subtitle }}
+                    {{ $project->subtitle }}
                 </div>
             </div>
         </div>
@@ -21,7 +21,7 @@
         <div class="has-text-centered">
             <div class="is-inline-block ">
                 <div class="title has-text-white is-size-5-touch is-size-3-desktop" style="padding: 0.5em">
-                    {{ $pj->title }}
+                    {{ $project->title }}
                 </div>
             </div>
         </div>
@@ -31,33 +31,33 @@
 <section class="is-fullheight">
 <div class="columns is-multiline" style="margin-right:0;">
     <div id="section-image-project" class="column has-text-centered is-12-tablet is-12-desktop is-4-widescreen">
-        @if (empty($pj->video))
-        <a class="image-popup-no-margins" href="{{asset('storage/image/project')}}/{{ $pj->cover }}">
-            <figure class=""><img src="{{asset('storage/image/project')}}/{{ $pj->cover_thumb }}" class="">
+        @if (empty($project->video))
+        <a class="image-popup-no-margins" href="{{asset('storage/image/project')}}/{{ $project->cover }}">
+            <figure class=""><img src="{{asset('storage/image/project')}}/{{ $project->cover_thumb }}" class="">
             </figure>
         </a>
         @else
         <div class="videoFrame">
-            <iframe src="{{ $pj->video }}" frameborder="0" allowfullscreen></iframe>
+            <iframe src="{{ $project->video }}" frameborder="0" allowfullscreen></iframe>
         </div>
         @endif
     </div>
 
     @php $number = 1; @endphp
     <div class="column" id="section-projectlist-detail">
-        @if (!empty($pj->about_head))
+        @if (!empty($project->about_head))
         <div class="columns wow fadeInDown">
             <div class="column is-3">
                 <sup>No {{ $number }}</sup>
                 <span class="title is-5 is-uppercase">ABOUT PROJECT</span>
             </div>
             <div class="column">
-                <p class="subtitle">{!! $pj->about_head !!}</p>
-                <h3>{!! $pj->about_detail !!}</h3>
+                <p class="subtitle">{!! $project->about_head !!}</p>
+                <h3>{!! $project->about_detail !!}</h3>
             </div>
         </div>
         @php $number++; @endphp @endif 
-        @if (!empty($ma[0]))
+        @if (!empty($project->material))
         <div class="columns wow fadeInDown">
             <div class="column is-3">
                 <sup>No {{$number}}</sup>
@@ -65,13 +65,18 @@
             </div>
             <div class="column">
                 <ul class="a">
-                    @foreach ($ma as $mate)
+                    @php
+                    $material = explode("&&",$project->material)
+                    @endphp
+                    @foreach ($material as $mate)
                     <li>{{ $mate }}</li>
                     @endforeach
                 </ul>
             </div>
         </div>
-        @php $number++; @endphp @endif @if (!empty($ro[0]))
+        @php $number++; @endphp @endif 
+        
+        @if (count($project->roles) != 0)
         <div class="columns wow fadeInDown">
             <div class="column is-3">
                 <sup>No {{ $number }}</sup>
@@ -79,13 +84,17 @@
             </div>
             <div class="column">
                 <ul class="a">
-                    @foreach ($ro as $role)
+                    @php
+                    $roles = explode("&&",$project->roles)
+                    @endphp
+                    @foreach ($roles as $role)
                     <li>{{ $role }}</li>
                     @endforeach
                 </ul>
             </div>
         </div>
-        @php $number++; @endphp @endif @if (!empty($ski[0]))
+        @php $number++; @endphp @endif 
+        @if (!empty($project->skills))
         <div class="columns wow fadeInDown">
             <div class="column is-3">
                 <sup>No {{ $number }}</sup>
@@ -93,23 +102,29 @@
             </div>
             <div class="column">
                 <ul class="a">
-                    @foreach ($ski as $skill)
+                    @php
+                    $skills = explode("&&",$project->skills)
+                    @endphp
+                    @foreach ($skills as $skill)
                     <li>{{ $skill }}</li>
                     @endforeach
                 </ul>
             </div>
         </div>
-        @php $number++; @endphp @endif @if (!empty($pj->link))
+        @php $number++; @endphp @endif 
+        @if (!empty($project->link))
         <div class="columns wow fadeInDown">
             <div class="column is-3">
                 <sup>No {{ $number }}</sup>
                 <span class="title is-5">LINK</span>
             </div>
             <div class="column">
-                <a href="{{ $pj->link }}">{{ $pj->link }}</a>
+                <a href="{{ $project->link }}">{{ $project->link }}</a>
             </div>
         </div>
-        @php $number++; @endphp @endif @if (!empty($im[0]))
+        @php $number++; @endphp @endif 
+        
+        @if (!empty($project->more_image))
         <div class="columns" style="padding-top:5em;">
             {{-- <div class="column is-3 wow fadeInDown">
                 <sup>No {{ $number }}</sup>
@@ -117,7 +132,10 @@
             </div> --}}
             <div class="column wow fadeIn" data-wow-duration="3s">
                 <div class="columns is-multiline has-text-centered">
-                    @foreach ($im as $image)
+                    @php
+                    $more_image = explode("&&",$project->more_image)
+                    @endphp
+                    @foreach ($more_image as $image)
                     <div class="column is-mobile">
                         <div class="item">
                             <a class="image-popup-no-margins" href="{{asset('storage/image/project')}}/{{ $image }}">

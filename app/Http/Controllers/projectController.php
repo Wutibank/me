@@ -55,18 +55,14 @@ class projectController extends Controller
     public function show($id)
     {
         //
-        $projects = project::find($id);
-        $material = project::find($id)->pluck('material');
-        $roles = project::find($id)->pluck('roles');
-        $skills = project::find($id)->pluck('skills');
-        $more_image = project::find($id)->pluck('more_image');
-        $mater = explode("&&",$material[$id-1]);
-        $role = explode("&&",$roles[$id-1]);
-        $skill = explode("&&",$skills[$id-1]);
-        $image = explode("&&",$more_image[$id-1]);
+        $project = project::find($id);
+        // $mater = explode("&&",$material[$id-1]);
+        // return $role = explode("&&",$project->roles);
+        // $skill = explode("&&",$skills[$id-1]);
+        // $image = explode("&&",$more_image[$id-1]);
         
 
-        return view('layouts.project-de',['pj'=>$projects,'ma'=>$mater,'ro'=>$role,'ski'=>$skill,'im'=>$image]);
+        return view('layouts.project-de',compact('project'));
     }
 
     /**
